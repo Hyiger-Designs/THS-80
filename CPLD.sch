@@ -1140,22 +1140,20 @@ F 9 "https://www.mouser.com/ProductDetail/576-SP0504BAHTG" H 8180 5771 50  0001 
 $EndComp
 Text HLabel 6875 2425 2    50   Output ~ 0
 PIO_IEO
-Text Label 6825 2525 2    50   ~ 0
+Text Label 6800 2725 2    50   ~ 0
 PMOD1
-Text Label 6825 2725 2    50   ~ 0
+Text Label 6800 2825 2    50   ~ 0
 PMOD2
-Text Label 6825 2825 2    50   ~ 0
+Text Label 6800 2925 2    50   ~ 0
 PMOD3
-Text Label 6825 2925 2    50   ~ 0
+Text Label 6800 3025 2    50   ~ 0
 PMOD4
-Text Label 6825 3025 2    50   ~ 0
+Text Label 6800 3125 2    50   ~ 0
 PMOD5
-Text Label 6825 3125 2    50   ~ 0
+Text Label 6800 3225 2    50   ~ 0
 PMOD6
-Text Label 6825 3225 2    50   ~ 0
+Text Label 6800 3325 2    50   ~ 0
 PMOD7
-Text Label 6825 3325 2    50   ~ 0
-PMOD8
 Wire Wire Line
 	7350 4800 7000 4800
 Wire Wire Line
@@ -1165,13 +1163,13 @@ Wire Wire Line
 Wire Wire Line
 	7350 5100 7000 5100
 Text Label 7300 4800 2    50   ~ 0
-PMOD1
+PMOD0
 Text Label 7300 4900 2    50   ~ 0
-PMOD2
+PMOD1
 Text Label 7300 5000 2    50   ~ 0
-PMOD3
+PMOD2
 Text Label 7300 5100 2    50   ~ 0
-PMOD4
+PMOD3
 $Comp
 L Device:R_Small R?
 U 1 1 5E9A839B
@@ -1347,9 +1345,9 @@ Wire Wire Line
 Wire Wire Line
 	10400 5100 10750 5100
 Text Label 10450 4800 0    50   ~ 0
-PMOD5
+PMOD4
 Text Label 10450 4900 0    50   ~ 0
-PMOD6
+PMOD5
 Text Label 10450 5000 0    50   ~ 0
 PMOD7
 Text Label 10450 5100 0    50   ~ 0
@@ -1898,4 +1896,6 @@ F 3 "" H 4000 7300 50  0001 C CNN
 	1    4000 7300
 	1    0    0    -1  
 $EndComp
+Text Label 6800 2525 2    50   ~ 0
+PMOD0
 $EndSCHEMATC
