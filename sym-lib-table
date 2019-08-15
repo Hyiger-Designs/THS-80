@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name THS-80)(type Legacy)(uri C:/Users/richa/gitrepo/THS-80/THS-80.lib)(options "")(descr ""))
+  (lib (name THS-80-rescue)(type Legacy)(uri ${KIPRJMOD}/THS-80-rescue.lib)(options "")(descr ""))
+)
