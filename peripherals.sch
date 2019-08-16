@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -244,8 +244,6 @@ Text Label 6625 1850 0    50   ~ 0
 D6
 Text Label 6625 1950 0    50   ~ 0
 D7
-Text Label 6850 2150 2    50   ~ 0
-CLK_CPU
 Text Label 6625 2350 0    50   ~ 0
 A0
 Text Label 6625 2450 0    50   ~ 0
@@ -477,16 +475,6 @@ F 3 "" H 4575 925 50  0001 C CNN
 $EndComp
 Text Label 4100 3225 0    50   ~ 0
 RXB
-Text Label 3150 2725 2    50   ~ 0
-CLK_UART
-Text Label 3150 2525 2    50   ~ 0
-CLK_UART
-Text Label 1100 2125 0    50   ~ 0
-SIO_~CE~
-Text Label 3100 1625 2    50   ~ 0
-CLK_UART
-Text Label 3100 1425 2    50   ~ 0
-CLK_UART
 Text Label 3100 3025 2    50   ~ 0
 ~RTSB
 Text Label 3100 3125 2    50   ~ 0
@@ -584,8 +572,6 @@ F 3 "~" H 5100 1525 50  0001 C CNN
 	1    5100 1525
 	1    0    0    -1  
 $EndComp
-Text Label 1050 3425 0    50   ~ 0
-CLK_CPU
 Text Label 1100 3225 0    50   ~ 0
 IEO
 Text Label 1100 3125 0    50   ~ 0
@@ -596,10 +582,6 @@ Text Label 1100 2825 0    50   ~ 0
 A1
 Text Label 1100 2725 0    50   ~ 0
 A0
-Text Label 1100 2525 0    50   ~ 0
-~RD
-Text Label 1100 2325 0    50   ~ 0
-~M1
 $Comp
 L THS-80:Z84C4310AEG U?
 U 1 1 5E05EC6D
@@ -617,14 +599,10 @@ F 7 "Z84C4310AEG" H -600 2975 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2050 2275
 	1    0    0    -1  
 $EndComp
-Text Label 1100 2225 0    50   ~ 0
-~RESET
-Text Label 1100 2425 0    50   ~ 0
-~IORQ
 Wire Wire Line
-	4575 925  4575 1000
+	4575 925  4575 975 
 Wire Wire Line
-	4550 2550 4550 2600
+	4550 2550 4550 2575
 Wire Wire Line
 	4275 3425 4025 3425
 Wire Wire Line
@@ -673,10 +651,8 @@ Wire Wire Line
 	4900 1625 4575 1625
 Wire Wire Line
 	4900 1425 4500 1425
-NoConn ~ 4900 1525
 Connection ~ 4725 3425
 Connection ~ 4550 3225
-NoConn ~ 4875 3125
 Connection ~ 4750 1825
 Connection ~ 4575 1625
 Wire Wire Line
@@ -1128,22 +1104,12 @@ Wire Wire Line
 	1300 6700 900  6700
 Wire Wire Line
 	1300 6900 900  6900
-Text Label 1275 5750 2    50   ~ 0
-CLK_CPU
-Text Label 1000 6000 0    50   ~ 0
-CTC_~CE~
 Text Label 1100 6800 0    50   ~ 0
 IEO
 Text Label 1100 6900 0    50   ~ 0
 ~INT
 Text Label 1100 6700 0    50   ~ 0
 IEI
-Text Label 1100 6300 0    50   ~ 0
-~M1
-Text Label 1100 6400 0    50   ~ 0
-~IORQ
-Text Label 1100 6500 0    50   ~ 0
-~RD
 Text Label 1100 6100 0    50   ~ 0
 A0
 Text Label 1100 6200 0    50   ~ 0
@@ -1280,8 +1246,6 @@ Text Label 2800 5550 0    50   ~ 0
 ZT2
 Text Label 2800 5750 0    50   ~ 0
 CT3
-Text Label 2800 6700 0    50   ~ 0
-~RESET
 Wire Wire Line
 	3450 5650 4500 5650
 Wire Wire Line
@@ -1290,8 +1254,6 @@ Wire Wire Line
 	3450 6050 4500 6050
 Wire Wire Line
 	3450 6250 4500 6250
-Wire Wire Line
-	3625 6725 3700 6725
 Wire Wire Line
 	4075 6150 4075 6725
 Connection ~ 4075 6150
@@ -1313,11 +1275,8 @@ Wire Wire Line
 Wire Wire Line
 	3700 5550 3700 6725
 Connection ~ 3700 5550
-Connection ~ 3700 6725
 Wire Wire Line
 	3700 6725 3825 6725
-Text Label 4175 6725 0    50   ~ 0
-CLK_U
 Wire Notes Line
 	650  4325 5325 4325
 Wire Notes Line
@@ -1330,4 +1289,94 @@ Wire Wire Line
 	10100 1625 10625 1625
 Wire Wire Line
 	9200 2725 9200 2900
+Text HLabel 6700 4525 0    50   Input ~ 0
+D[0..7]
+Text HLabel 6700 4625 0    50   Input ~ 0
+A[0..1]
+Text HLabel 3100 6700 2    50   Input ~ 0
+~RESET
+Text HLabel 900  5750 0    50   Input ~ 0
+CLK
+Text HLabel 900  6000 0    50   Input ~ 0
+CTC_~CE
+Text HLabel 900  6300 0    50   Input ~ 0
+~M1
+Text HLabel 900  6400 0    50   Input ~ 0
+~IORQ
+Text HLabel 900  6500 0    50   Input ~ 0
+~RD
+Text HLabel 900  2225 0    50   Input ~ 0
+~RESET
+Text HLabel 900  2125 0    50   Input ~ 0
+SIO_~CE
+Text HLabel 900  2325 0    50   Input ~ 0
+~M1
+Text HLabel 900  2425 0    50   Input ~ 0
+~IORQ
+Text HLabel 900  2525 0    50   Input ~ 0
+~RD
+Text HLabel 900  3425 0    50   Input ~ 0
+CLK
+Text HLabel 6475 2150 0    50   Input ~ 0
+CLK
+Text HLabel 6475 2750 0    50   Input ~ 0
+~M1
+Text HLabel 6475 2850 0    50   Input ~ 0
+~IORQ
+Text HLabel 6475 2950 0    50   Input ~ 0
+~RD
+Text HLabel 6475 2650 0    50   Input ~ 0
+PIO_~CE
+Text HLabel 900  3025 0    50   Input ~ 0
+~INT
+Text HLabel 900  6900 0    50   Input ~ 0
+~INT
+Text HLabel 6475 3150 0    50   Input ~ 0
+~INT
+Text HLabel 4475 6725 2    50   Input ~ 0
+CLK_U
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5D92266C
+P 4775 3125
+F 0 "JP?" H 4775 3310 50  0000 C CNN
+F 1 "5V" H 4775 3219 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4775 3125 50  0001 C CNN
+F 3 "~" H 4775 3125 50  0001 C CNN
+	1    4775 3125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4675 3125 4675 2575
+Wire Wire Line
+	4675 2575 4550 2575
+Connection ~ 4550 2575
+Wire Wire Line
+	4550 2575 4550 2600
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5D934FDF
+P 4800 1525
+F 0 "JP?" H 4800 1710 50  0000 C CNN
+F 1 "5V" H 4800 1619 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4800 1525 50  0001 C CNN
+F 3 "~" H 4800 1525 50  0001 C CNN
+	1    4800 1525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1525 4700 975 
+Wire Wire Line
+	4700 975  4575 975 
+Connection ~ 4575 975 
+Wire Wire Line
+	4575 975  4575 1000
+Text HLabel 3200 2725 2    50   Input ~ 0
+CLK_U
+Text HLabel 3200 2525 2    50   Input ~ 0
+CLK_U
+Text HLabel 3200 1625 2    50   Input ~ 0
+CLK_U
+Text HLabel 3200 1425 2    50   Input ~ 0
+CLK_U
 $EndSCHEMATC
