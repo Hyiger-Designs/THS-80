@@ -353,22 +353,6 @@ $EndComp
 Text Notes 640  770  0    50   ~ 0
 JTAG
 $Comp
-L THS-80:Altera-JTAG-10 J?
-U 1 1 5DC12FA5
-P 1000 1950
-AR Path="/5D0F9837/5DC12FA5" Ref="J?"  Part="1" 
-AR Path="/5CFABACD/5D0BF766/5DC12FA5" Ref="J?"  Part="1" 
-AR Path="/5D1AF052/5DC12FA5" Ref="J?"  Part="1" 
-AR Path="/5DC12FA5" Ref="J?"  Part="1" 
-AR Path="/5D70CA34/5DC12FA5" Ref="J5"  Part="1" 
-F 0 "J5" H 1040 1950 50  0000 R CNN
-F 1 "JTAG" H 760 2450 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" V 850 2100 50  0001 C CNN
-F 3 "~" H -275 1400 50  0001 C CNN
-	1    1000 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR?
 U 1 1 5DC12FAB
 P 1200 1300
@@ -385,11 +369,6 @@ Wire Wire Line
 	900  1350 900  1300
 Wire Wire Line
 	900  1300 1200 1300
-Wire Wire Line
-	1500 1300 1500 1650
-Connection ~ 1200 1300
-Wire Wire Line
-	1200 1300 1500 1300
 Wire Wire Line
 	1500 1850 1700 1850
 Wire Wire Line
@@ -596,8 +575,6 @@ Wire Wire Line
 Connection ~ 5550 5300
 Text HLabel 7350 2075 2    50   Input ~ 0
 A[0..7]
-Text HLabel 3750 2400 0    50   Output ~ 0
-A[16..18]
 Text HLabel 7350 3150 2    50   Input ~ 0
 D[0..7]
 Text Label 8925 3000 0    50   ~ 0
@@ -723,39 +700,39 @@ CLK_UART
 $Comp
 L Device:R_Pack08 RN2
 U 1 1 5D75CC44
-P 10300 3300
-F 0 "RN2" V 9683 3300 50  0000 C CNN
-F 1 "680R" V 9774 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_Cat16-8" V 10775 3300 50  0001 C CNN
-F 3 "~" H 10300 3300 50  0001 C CNN
-	1    10300 3300
-	0    1    -1   0   
+P 10300 3400
+F 0 "RN2" V 9683 3400 50  0000 C CNN
+F 1 "680R" V 9774 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_Cat16-8" V 10775 3400 50  0001 C CNN
+F 3 "~" H 10300 3400 50  0001 C CNN
+	1    10300 3400
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10500 3700 10500 3600
-Connection ~ 10500 3600
-Wire Wire Line
-	10500 3600 10500 3500
-Connection ~ 10500 3500
-Wire Wire Line
-	10500 3500 10500 3400
-Connection ~ 10500 3400
-Wire Wire Line
-	10500 3400 10500 3350
-Connection ~ 10500 3300
-Wire Wire Line
-	10500 3300 10500 3200
-Connection ~ 10500 3200
-Wire Wire Line
-	10500 3200 10500 3100
+	10500 3000 10500 3100
 Connection ~ 10500 3100
 Wire Wire Line
-	10500 3100 10500 3000
+	10500 3100 10500 3200
+Connection ~ 10500 3200
+Wire Wire Line
+	10500 3200 10500 3300
+Connection ~ 10500 3300
+Wire Wire Line
+	10500 3300 10500 3350
+Connection ~ 10500 3400
+Wire Wire Line
+	10500 3400 10500 3500
+Connection ~ 10500 3500
+Wire Wire Line
+	10500 3500 10500 3600
+Connection ~ 10500 3600
+Wire Wire Line
+	10500 3600 10500 3700
 Wire Wire Line
 	10500 3350 10600 3350
 Connection ~ 10500 3350
 Wire Wire Line
-	10500 3350 10500 3300
+	10500 3350 10500 3400
 $Comp
 L power:VCC #PWR043
 U 1 1 5D7DF573
@@ -765,7 +742,7 @@ F 1 "VCC" H 10617 3523 50  0000 C CNN
 F 2 "" H 10600 3350 50  0001 C CNN
 F 3 "" H 10600 3350 50  0001 C CNN
 	1    10600 3350
-	1    0    0    1   
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Pack08 RN1
@@ -1033,13 +1010,13 @@ $EndComp
 $Comp
 L Power_Protection:SP0504BAHT D12
 U 1 1 5DDF5EA5
-P 8900 6050
-F 0 "D12" H 9205 6096 50  0000 L CNN
-F 1 "SP0504BAHT" H 9205 6005 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9200 6000 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 9025 6175 50  0001 C CNN
-	1    8900 6050
-	1    0    0    -1  
+P 9000 6050
+F 0 "D12" H 8550 6050 50  0000 L CNN
+F 1 "SP0504BAHT" H 8350 5950 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 9300 6000 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 9125 6175 50  0001 C CNN
+	1    9000 6050
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	6750 5850 6750 5450
@@ -1178,13 +1155,13 @@ $EndComp
 $Comp
 L power:GND #PWR040
 U 1 1 5E09A200
-P 8900 6250
-F 0 "#PWR040" H 8900 6000 50  0001 C CNN
-F 1 "GND" H 8905 6077 50  0000 C CNN
-F 2 "" H 8900 6250 50  0001 C CNN
-F 3 "" H 8900 6250 50  0001 C CNN
-	1    8900 6250
-	1    0    0    -1  
+P 9000 6250
+F 0 "#PWR040" H 9000 6000 50  0001 C CNN
+F 1 "GND" H 9005 6077 50  0000 C CNN
+F 2 "" H 9000 6250 50  0001 C CNN
+F 3 "" H 9000 6250 50  0001 C CNN
+	1    9000 6250
+	-1   0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR033
@@ -1205,12 +1182,6 @@ Wire Wire Line
 	6650 1250 7250 1250
 Wire Wire Line
 	6650 1350 7250 1350
-Wire Wire Line
-	4450 2250 3850 2250
-Wire Wire Line
-	4450 2350 3850 2350
-Wire Wire Line
-	4450 2450 3850 2450
 Wire Wire Line
 	6650 1850 7250 1850
 Wire Wire Line
@@ -1401,18 +1372,6 @@ Text Label 6950 3350 0    50   ~ 0
 D6
 Text Label 6950 3450 0    50   ~ 0
 D7
-Text Label 4150 2250 2    50   ~ 0
-A18
-Text Label 4150 2350 2    50   ~ 0
-A17
-Text Label 4150 2450 2    50   ~ 0
-A16
-Entry Wire Line
-	3850 2250 3750 2350
-Entry Wire Line
-	3850 2350 3750 2450
-Entry Wire Line
-	3850 2450 3750 2550
 Entry Wire Line
 	7250 1850 7350 1950
 Entry Wire Line
@@ -1506,9 +1465,9 @@ F 3 "" H 3200 4900 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 NoConn ~ 6650 1550
-NoConn ~ 4450 1950
-NoConn ~ 4450 2050
-NoConn ~ 4450 2150
+NoConn ~ 4450 2250
+NoConn ~ 4450 2350
+NoConn ~ 4450 2450
 $Comp
 L Device:C_Small C6
 U 1 1 5FAC82AD
@@ -1729,8 +1688,45 @@ Text HLabel 7250 1450 2    50   Output ~ 0
 ~WAIT
 Wire Wire Line
 	6650 1450 7250 1450
+$Comp
+L THS-80:Altera-JTAG-10 J?
+U 1 1 5DC12FA5
+P 1000 1950
+AR Path="/5D0F9837/5DC12FA5" Ref="J?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5DC12FA5" Ref="J?"  Part="1" 
+AR Path="/5D1AF052/5DC12FA5" Ref="J?"  Part="1" 
+AR Path="/5DC12FA5" Ref="J?"  Part="1" 
+AR Path="/5D70CA34/5DC12FA5" Ref="J5"  Part="1" 
+F 0 "J5" H 1040 1950 50  0000 R CNN
+F 1 "JTAG" H 760 2450 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" V 850 2100 50  0001 C CNN
+F 3 "~" H -275 1400 50  0001 C CNN
+	1    1000 1950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1500 1650
+Entry Wire Line
+	3850 2150 3750 2250
+Entry Wire Line
+	3850 2050 3750 2150
+Entry Wire Line
+	3850 1950 3750 2050
+Text Label 4150 2150 2    50   ~ 0
+A16
+Text Label 4150 2050 2    50   ~ 0
+A17
+Text Label 4150 1950 2    50   ~ 0
+A18
+Wire Wire Line
+	4450 2150 3850 2150
+Wire Wire Line
+	4450 2050 3850 2050
+Wire Wire Line
+	4450 1950 3850 1950
+Text HLabel 3750 2100 0    50   Output ~ 0
+A[16..18]
 Wire Bus Line
-	3750 2250 3750 2550
+	3750 1950 3750 2250
 Wire Bus Line
 	7350 1950 7350 2750
 Wire Bus Line
