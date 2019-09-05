@@ -577,38 +577,38 @@ Text HLabel 7350 2075 2    50   Input ~ 0
 A[0..7]
 Text HLabel 7350 3150 2    50   Input ~ 0
 D[0..7]
-Text Label 8925 3000 0    50   ~ 0
-LED0
-Text Label 8925 3100 0    50   ~ 0
-LED1
-Text Label 8925 3200 0    50   ~ 0
-LED2
-Text Label 8925 3300 0    50   ~ 0
-LED3
-Text Label 8925 3400 0    50   ~ 0
-LED4
-Text Label 8925 3500 0    50   ~ 0
-LED5
-Text Label 8925 3600 0    50   ~ 0
-LED6
 Text Label 8925 3700 0    50   ~ 0
+LED0
+Text Label 8925 3600 0    50   ~ 0
+LED1
+Text Label 8925 3500 0    50   ~ 0
+LED2
+Text Label 8925 3400 0    50   ~ 0
+LED3
+Text Label 8925 3300 0    50   ~ 0
+LED4
+Text Label 8925 3200 0    50   ~ 0
+LED5
+Text Label 8925 3100 0    50   ~ 0
+LED6
+Text Label 8925 3000 0    50   ~ 0
 LED7
-Wire Wire Line
-	8850 3600 9650 3600
-Wire Wire Line
-	8850 3500 9650 3500
-Wire Wire Line
-	8850 3400 9650 3400
-Wire Wire Line
-	8850 3300 9650 3300
-Wire Wire Line
-	8850 3200 9650 3200
 Wire Wire Line
 	8850 3100 9650 3100
 Wire Wire Line
-	8850 3000 9650 3000
+	8850 3200 9650 3200
+Wire Wire Line
+	8850 3300 9650 3300
+Wire Wire Line
+	8850 3400 9650 3400
+Wire Wire Line
+	8850 3500 9650 3500
+Wire Wire Line
+	8850 3600 9650 3600
 Wire Wire Line
 	8850 3700 9650 3700
+Wire Wire Line
+	8850 3000 9650 3000
 Text HLabel 3850 4350 0    50   Input ~ 0
 ~RESET
 Text HLabel 7250 1050 2    50   Input ~ 0

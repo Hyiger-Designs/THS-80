@@ -28,58 +28,58 @@ F 3 "~" H 4875 5250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5575 4850 5175 4850
-Wire Wire Line
-	5575 4950 5175 4950
-Wire Wire Line
-	5575 5050 5175 5050
-Wire Wire Line
-	5575 5150 5175 5150
-Wire Wire Line
-	5575 5250 5175 5250
-Wire Wire Line
-	5575 5350 5175 5350
-Wire Wire Line
-	5575 5450 5175 5450
-Wire Wire Line
-	5575 5550 5175 5550
+	5575 5750 5175 5750
 Wire Wire Line
 	5575 5650 5175 5650
 Wire Wire Line
-	5575 5750 5175 5750
+	5575 5550 5175 5550
+Wire Wire Line
+	5575 5450 5175 5450
+Wire Wire Line
+	5575 5350 5175 5350
+Wire Wire Line
+	5575 5250 5175 5250
+Wire Wire Line
+	5575 5150 5175 5150
+Wire Wire Line
+	5575 5050 5175 5050
+Wire Wire Line
+	5575 4950 5175 4950
+Wire Wire Line
+	5575 4850 5175 4850
 Wire Wire Line
 	5675 5850 5175 5850
 Wire Wire Line
 	4675 4750 4275 4750
 Wire Wire Line
-	4675 4850 4275 4850
-Wire Wire Line
-	4675 4950 4275 4950
-Wire Wire Line
-	4675 5050 4275 5050
-Wire Wire Line
-	4675 5150 4275 5150
-Wire Wire Line
-	4675 5250 4275 5250
-Wire Wire Line
-	4675 5350 4275 5350
-Wire Wire Line
-	4675 5450 4275 5450
-Wire Wire Line
-	4675 5550 4275 5550
+	4675 5750 4275 5750
 Wire Wire Line
 	4675 5650 4275 5650
 Wire Wire Line
-	4675 5750 4275 5750
+	4675 5550 4275 5550
+Wire Wire Line
+	4675 5450 4275 5450
+Wire Wire Line
+	4675 5350 4275 5350
+Wire Wire Line
+	4675 5250 4275 5250
+Wire Wire Line
+	4675 5150 4275 5150
+Wire Wire Line
+	4675 5050 4275 5050
+Wire Wire Line
+	4675 4950 4275 4950
+Wire Wire Line
+	4675 4850 4275 4850
 Wire Wire Line
 	4675 5850 4275 5850
-Text Label 4425 5650 0    50   ~ 0
+Text Label 4425 4950 0    50   ~ 0
 ARDY
-Text Label 4425 5750 0    50   ~ 0
+Text Label 4425 4850 0    50   ~ 0
 ~ASTB
-Text Label 5275 5650 0    50   ~ 0
+Text Label 5275 4950 0    50   ~ 0
 BRDY
-Text Label 5275 5750 0    50   ~ 0
+Text Label 5275 4850 0    50   ~ 0
 ~BSTB
 $Comp
 L power:GND #PWR?
@@ -491,37 +491,37 @@ F 3 "" H 5700 4750 50  0001 C CNN
 	1    5700 4750
 	1    0    0    -1  
 $EndComp
-Text Label 5275 5550 0    50   ~ 0
-PB0
-Text Label 5275 5450 0    50   ~ 0
-PB1
-Text Label 5275 5350 0    50   ~ 0
-PB2
-Text Label 5275 5250 0    50   ~ 0
-PB3
-Text Label 5275 5150 0    50   ~ 0
-PB4
 Text Label 5275 5050 0    50   ~ 0
+PB0
+Text Label 5275 5150 0    50   ~ 0
+PB1
+Text Label 5275 5250 0    50   ~ 0
+PB2
+Text Label 5275 5350 0    50   ~ 0
+PB3
+Text Label 5275 5450 0    50   ~ 0
+PB4
+Text Label 5275 5550 0    50   ~ 0
 PB5
-Text Label 5275 4950 0    50   ~ 0
+Text Label 5275 5650 0    50   ~ 0
 PB6
-Text Label 5275 4850 0    50   ~ 0
+Text Label 5275 5750 0    50   ~ 0
 PB7
-Text Label 4425 5550 0    50   ~ 0
-PA0
-Text Label 4425 5450 0    50   ~ 0
-PA1
-Text Label 4425 5350 0    50   ~ 0
-PA2
-Text Label 4425 5250 0    50   ~ 0
-PA3
-Text Label 4425 5150 0    50   ~ 0
-PA4
 Text Label 4425 5050 0    50   ~ 0
+PA0
+Text Label 4425 5150 0    50   ~ 0
+PA1
+Text Label 4425 5250 0    50   ~ 0
+PA2
+Text Label 4425 5350 0    50   ~ 0
+PA3
+Text Label 4425 5450 0    50   ~ 0
+PA4
+Text Label 4425 5550 0    50   ~ 0
 PA5
-Text Label 4425 4950 0    50   ~ 0
+Text Label 4425 5650 0    50   ~ 0
 PA6
-Text Label 4425 4850 0    50   ~ 0
+Text Label 4425 5750 0    50   ~ 0
 PA7
 Text Label 10250 2200 0    50   ~ 0
 CT3
