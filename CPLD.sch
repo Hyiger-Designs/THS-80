@@ -887,36 +887,36 @@ Wire Wire Line
 NoConn ~ 2300 5750
 NoConn ~ 2400 5750
 Wire Wire Line
-	10200 5600 9800 5600
-Wire Wire Line
-	10200 5700 9800 5700
-Wire Wire Line
-	10200 5800 9800 5800
-Wire Wire Line
-	10200 5900 9800 5900
-Wire Wire Line
-	10200 6000 9800 6000
-Wire Wire Line
-	10200 6100 9800 6100
+	10200 6300 9800 6300
 Wire Wire Line
 	10200 6200 9800 6200
 Wire Wire Line
-	10200 6300 9800 6300
-Text Label 10000 5600 0    50   ~ 0
-R0
-Text Label 10000 5700 0    50   ~ 0
-R1
-Text Label 10000 5800 0    50   ~ 0
-R2
-Text Label 10000 5900 0    50   ~ 0
-R3
-Text Label 10000 6000 0    50   ~ 0
-R4
-Text Label 10000 6100 0    50   ~ 0
-R5
-Text Label 10000 6200 0    50   ~ 0
-R6
+	10200 6100 9800 6100
+Wire Wire Line
+	10200 6000 9800 6000
+Wire Wire Line
+	10200 5900 9800 5900
+Wire Wire Line
+	10200 5800 9800 5800
+Wire Wire Line
+	10200 5700 9800 5700
+Wire Wire Line
+	10200 5600 9800 5600
 Text Label 10000 6300 0    50   ~ 0
+R0
+Text Label 10000 6200 0    50   ~ 0
+R1
+Text Label 10000 6100 0    50   ~ 0
+R2
+Text Label 10000 6000 0    50   ~ 0
+R3
+Text Label 10000 5900 0    50   ~ 0
+R4
+Text Label 10000 5800 0    50   ~ 0
+R5
+Text Label 10000 5700 0    50   ~ 0
+R6
+Text Label 10000 5600 0    50   ~ 0
 R7
 $Comp
 L Device:R_Pack08 RN3
@@ -930,36 +930,36 @@ F 3 "~" H 10400 6000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10600 5600 11000 5600
-Wire Wire Line
-	10600 5700 11000 5700
-Wire Wire Line
-	10600 5800 11000 5800
-Wire Wire Line
-	10600 5900 11000 5900
-Wire Wire Line
-	10600 6000 11000 6000
-Wire Wire Line
-	10600 6100 11000 6100
+	10600 6300 11000 6300
 Wire Wire Line
 	10600 6200 11000 6200
 Wire Wire Line
-	10600 6300 11000 6300
-Text Label 10700 5600 0    50   ~ 0
-PMOD0
-Text Label 10700 5700 0    50   ~ 0
-PMOD1
-Text Label 10700 5800 0    50   ~ 0
-PMOD2
-Text Label 10700 5900 0    50   ~ 0
-PMOD3
-Text Label 10700 6000 0    50   ~ 0
-PMOD4
-Text Label 10700 6100 0    50   ~ 0
-PMOD5
-Text Label 10700 6200 0    50   ~ 0
-PMOD6
+	10600 6100 11000 6100
+Wire Wire Line
+	10600 6000 11000 6000
+Wire Wire Line
+	10600 5900 11000 5900
+Wire Wire Line
+	10600 5800 11000 5800
+Wire Wire Line
+	10600 5700 11000 5700
+Wire Wire Line
+	10600 5600 11000 5600
 Text Label 10700 6300 0    50   ~ 0
+PMOD0
+Text Label 10700 6200 0    50   ~ 0
+PMOD1
+Text Label 10700 6100 0    50   ~ 0
+PMOD2
+Text Label 10700 6000 0    50   ~ 0
+PMOD3
+Text Label 10700 5900 0    50   ~ 0
+PMOD4
+Text Label 10700 5800 0    50   ~ 0
+PMOD5
+Text Label 10700 5700 0    50   ~ 0
+PMOD6
+Text Label 10700 5600 0    50   ~ 0
 PMOD7
 $Comp
 L Connector_Generic:Conn_02x06_Top_Bottom J6
