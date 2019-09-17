@@ -1,6 +1,24 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# AP7381-33SA-Regulator_Linear
+#
+DEF AP7381-33SA-Regulator_Linear U 0 10 Y Y 1 F N
+F0 "U" -150 125 50 H V C CNN
+F1 "AP7381-33SA-Regulator_Linear" 0 125 50 H V L CNN
+F2 "Package_TO_SOT_SMD:SOT-23" 0 225 50 H I C CIN
+F3 "" 0 -50 50 H I C CNN
+$FPLIST
+ SOT?223*
+$ENDFPLIST
+DRAW
+S -200 -200 200 75 0 1 10 f
+X VI 1 -300 0 100 R 50 50 1 1 W
+X VO 2 300 0 100 L 50 50 1 1 w
+X GND 3 0 -300 100 U 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
 # C_Small-Device-max_breakout-rescue-sbc_z80-rescue
 #
 DEF C_Small-Device-max_breakout-rescue-sbc_z80-rescue C 0 10 N N 1 F N
@@ -82,6 +100,19 @@ ENDDEF
 DEF GND-power-sbc_z80-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
 F1 "GND-power-sbc_z80-rescue" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# GND-power-sbc_z80-rescue-THS-80-rescue-de10-lite-ram-rom-rescue
+#
+DEF GND-power-sbc_z80-rescue-THS-80-rescue-de10-lite-ram-rom-rescue #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND-power-sbc_z80-rescue-THS-80-rescue-de10-lite-ram-rom-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
