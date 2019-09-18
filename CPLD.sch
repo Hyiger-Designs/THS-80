@@ -1313,6 +1313,72 @@ Wire Wire Line
 Connection ~ 3100 1950
 Wire Wire Line
 	3100 1950 3525 1950
+Text Label 6300 4650 0    50   ~ 0
+USER_PB
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5D8710D3
+P 1650 5400
+F 0 "SW3" V 1696 5352 50  0000 R CNN
+F 1 "User PB" V 1605 5352 50  0000 R CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 1650 5600 50  0001 C CNN
+F 3 "~" H 1650 5600 50  0001 C CNN
+	1    1650 5400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR082
+U 1 1 5D8738FA
+P 1650 5600
+F 0 "#PWR082" H 1650 5350 50  0001 C CNN
+F 1 "GND" H 1655 5427 50  0000 C CNN
+F 2 "" H 1650 5600 50  0001 C CNN
+F 3 "" H 1650 5600 50  0001 C CNN
+	1    1650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 5200 2050 5200
+$Comp
+L Device:C_Small C?
+U 1 1 5D88E389
+P 2050 5400
+AR Path="/5D65A6A0/5D88E389" Ref="C?"  Part="1" 
+AR Path="/5D88E389" Ref="C?"  Part="1" 
+AR Path="/5D70CA34/5D88E389" Ref="C28"  Part="1" 
+F 0 "C28" H 2150 5500 50  0000 L CNN
+F 1 "100nF" H 2150 5400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2050 5400 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 2050 5400 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 0603 10V 10nF 5% X7R" H 2142 5546 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 2050 5400 50  0001 C CNN "MFR"
+F 6 "JMK107B7474KA-T" H 2050 5400 50  0001 C CNN "MPN"
+F 7 "963-JMK107B7474KA-T" H 2142 5546 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2050 5400 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/963-JMK107B7474KA-T" H 2142 5546 50  0001 C CNN "SPURL"
+	1    2050 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5300 2050 5200
+$Comp
+L power:GND #PWR083
+U 1 1 5D8C3559
+P 2050 5600
+F 0 "#PWR083" H 2050 5350 50  0001 C CNN
+F 1 "GND" H 2055 5427 50  0000 C CNN
+F 2 "" H 2050 5600 50  0001 C CNN
+F 3 "" H 2050 5600 50  0001 C CNN
+	1    2050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 5500 2050 5600
+Text Label 2400 5200 2    50   ~ 0
+USER_PB
+Connection ~ 2050 5200
+Wire Wire Line
+	2050 5200 2400 5200
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line
