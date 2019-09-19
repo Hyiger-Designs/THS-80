@@ -686,21 +686,21 @@ Wire Wire Line
 Wire Wire Line
 	6150 1350 6750 1350
 Wire Wire Line
-	6150 3150 6750 3150
+	5700 3150 6750 3150
 Wire Wire Line
-	6150 3250 6750 3250
+	5700 3250 6750 3250
 Wire Wire Line
-	6150 3350 6750 3350
+	5700 3350 6750 3350
 Wire Wire Line
-	6150 3450 6750 3450
+	5700 3450 6750 3450
 Wire Wire Line
-	6150 3550 6750 3550
+	5700 3550 6750 3550
 Wire Wire Line
-	6150 3650 6750 3650
+	5700 3650 6750 3650
 Wire Wire Line
-	6150 3750 6750 3750
+	5700 3750 6750 3750
 Wire Wire Line
-	6150 3850 6750 3850
+	5700 3850 6750 3850
 Wire Wire Line
 	8950 1850 9550 1850
 Wire Wire Line
@@ -737,22 +737,20 @@ Text Label 6400 1450 0    50   ~ 0
 SW4
 Text Label 6350 1550 0    50   ~ 0
 SW5
-Text Label 6400 3150 0    50   ~ 0
-PMOD0
-Text Label 6400 3250 0    50   ~ 0
+Text Label 6300 3250 0    50   ~ 0
 PMOD1
-Text Label 6400 3350 0    50   ~ 0
+Text Label 6300 3450 0    50   ~ 0
 PMOD2
-Text Label 6400 3450 0    50   ~ 0
+Text Label 6300 3650 0    50   ~ 0
 PMOD3
-Text Label 6400 3550 0    50   ~ 0
+Text Label 6300 3850 0    50   ~ 0
 PMOD4
-Text Label 6400 3650 0    50   ~ 0
-PMOD5
-Text Label 6400 3750 0    50   ~ 0
-PMOD6
-Text Label 6400 3850 0    50   ~ 0
+Text Label 6300 3350 0    50   ~ 0
 PMOD7
+Text Label 6300 3550 0    50   ~ 0
+PMOD8
+Text Label 6300 3750 0    50   ~ 0
+PMOD9
 Text Label 9250 2950 0    50   ~ 0
 D0
 Text Label 9250 3050 0    50   ~ 0
@@ -1091,25 +1089,9 @@ Wire Wire Line
 	6750 2450 6150 2450
 Text HLabel 6050 2600 0    50   Output ~ 0
 A[16..18]
-$Sheet
-S 4775 2975 650  525 
-U 5DC790D1
-F0 "PMOD" 50
-F1 "pmod.sch" 50
-F2 "PMOD[0..7]" B R 5425 3150 50 
-F3 "OE1" I R 5425 3325 50 
-$EndSheet
-Wire Bus Line
-	5425 3150 5950 3150
-Text Label 5525 3150 0    50   ~ 0
-PMOD[0..7]
 Wire Wire Line
-	5425 3325 5950 3325
-Text Label 5550 3325 0    50   ~ 0
-OE1
-Wire Wire Line
-	6150 3950 6750 3950
-Text Label 6425 3950 0    50   ~ 0
+	5700 3950 6750 3950
+Text Label 6325 3150 0    50   ~ 0
 OE1
 NoConn ~ 6750 2950
 NoConn ~ 6750 2850
@@ -1160,28 +1142,6 @@ Wire Wire Line
 	4900 5100 6750 5100
 Text Label 3450 3450 0    50   ~ 0
 CLK
-Entry Wire Line
-	6050 3050 6150 3150
-Entry Wire Line
-	6050 3150 6150 3250
-Entry Wire Line
-	6050 3250 6150 3350
-Entry Wire Line
-	6050 3350 6150 3450
-Entry Wire Line
-	6050 3450 6150 3550
-Entry Wire Line
-	6050 3550 6150 3650
-Entry Wire Line
-	6050 3650 6150 3750
-Entry Wire Line
-	6050 3750 6150 3850
-Entry Wire Line
-	6050 3850 6150 3950
-Entry Bus Bus
-	5950 3150 6050 3250
-Entry Wire Line
-	5950 3325 6050 3425
 NoConn ~ 6750 3050
 Entry Wire Line
 	9550 2850 9650 2750
@@ -1379,12 +1339,27 @@ USER_PB
 Connection ~ 2050 5200
 Wire Wire Line
 	2050 5200 2400 5200
+$Sheet
+S 5025 3075 675  975 
+U 5DC790D1
+F0 "PMOD" 50
+F1 "pmod.sch" 50
+F2 "OE1" I R 5700 3150 50 
+F3 "PMOD1" T R 5700 3250 50 
+F4 "PMOD2" T R 5700 3450 50 
+F5 "PMOD3" T R 5700 3650 50 
+F6 "PMOD4" T R 5700 3850 50 
+F7 "PMOD7" T R 5700 3350 50 
+F8 "PMOD8" T R 5700 3550 50 
+F9 "PMOD9" T R 5700 3750 50 
+F10 "PMOD10" T R 5700 3950 50 
+$EndSheet
+Text Label 6300 3950 0    50   ~ 0
+PMOD10
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line
 	9650 2050 9650 2750
-Wire Bus Line
-	6050 3050 6050 3950
 Wire Bus Line
 	9650 2850 9650 3650
 $EndSCHEMATC
