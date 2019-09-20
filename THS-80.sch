@@ -444,7 +444,7 @@ Text Label 4250 5350 2    50   ~ 0
 Text Label 4250 5450 2    50   ~ 0
 ~RFSH
 Text Label 4250 5650 2    50   ~ 0
-~CLK2
+CLK2
 Text Label 4250 5750 2    50   ~ 0
 ~BUSAK
 Text Label 4250 5550 2    50   ~ 0
@@ -749,7 +749,7 @@ Text Label 2250 5350 2    50   ~ 0
 Text Label 2250 5450 2    50   ~ 0
 ~RFSH
 Text Label 2250 5650 2    50   ~ 0
-~CLK2
+CLK2
 Text Label 2250 5750 2    50   ~ 0
 ~BUSAK
 Text Label 2250 5550 2    50   ~ 0
@@ -899,14 +899,12 @@ Wire Bus Line
 	5250 900  4600 900 
 Wire Bus Line
 	5250 1000 4600 1000
-Text Label 8000 975  0    50   ~ 0
+Text Label 8100 900  0    50   ~ 0
 A[0..2]
-Text Label 8000 1075 0    50   ~ 0
+Text Label 8100 1000 0    50   ~ 0
 D[0..7]
 Wire Bus Line
-	8575 975  7925 975 
-Wire Bus Line
-	8575 1075 7925 1075
+	8575 1000 7925 1000
 Text Label 10025 4050 0    50   ~ 0
 A[0..18]
 Text Label 10025 4150 0    50   ~ 0
@@ -955,74 +953,36 @@ Text Label 10075 4550 0    50   ~ 0
 ~IORQ
 Wire Wire Line
 	10600 4550 9950 4550
-$Sheet
-S 8575 800  1225 1600
-U 5DFE5C15
-F0 "Peripherals" 50
-F1 "peripherals.sch" 50
-F2 "A[0..2]" I L 8575 975 50 
-F3 "CLK_7328" I R 9800 1700 50 
-F4 "SIO_~CE~" I L 8575 1250 50 
-F5 "~RESET~" I R 9800 2325 50 
-F6 "~M1" I L 8575 1650 50 
-F7 "~IORQ" I L 8575 1750 50 
-F8 "~RD" I L 8575 1850 50 
-F9 "CLK" I R 9800 1600 50 
-F10 "IEI" I R 9800 2050 50 
-F11 "CTC_~CE" I L 8575 1350 50 
-F12 "PIO_~CE~" I L 8575 1450 50 
-F13 "~INT" O R 9800 1950 50 
-F14 "D[0..7]" T L 8575 1075 50 
-F15 "IEO_2" O R 9800 2150 50 
-F16 "IDE_~CE" I L 8575 1550 50 
-F17 "~WR" I L 8575 1950 50 
-F18 "TXA" O R 9800 950 50 
-F19 "RXA" I R 9800 1050 50 
-F20 "RXB" I R 9800 1200 50 
-F21 "TXB" O R 9800 1300 50 
-$EndSheet
-Text Label 8125 1650 2    50   ~ 0
-~M1
 Wire Wire Line
-	8575 1650 7925 1650
+	8575 1600 7925 1600
 Text Label 9875 2325 0    50   ~ 0
 ~RESET
 Wire Wire Line
 	10450 2325 9800 2325
 Wire Wire Line
-	8575 1350 7925 1350
+	8575 1300 7925 1300
 Wire Wire Line
-	8575 1250 7925 1250
-Text Label 8275 1250 2    50   ~ 0
-SIO_~CE
-Text Label 8000 1750 0    50   ~ 0
-~IORQ
+	8575 1200 7925 1200
 Wire Wire Line
-	8575 1750 7925 1750
-Text Label 8125 1850 2    50   ~ 0
-~RD
+	8575 1700 7925 1700
 Wire Wire Line
-	8575 1850 7925 1850
+	8575 1800 7925 1800
 Wire Wire Line
-	10450 1600 9800 1600
+	8575 2050 7925 2050
 Wire Wire Line
-	10450 1700 9800 1700
+	8575 2150 7925 2150
 Wire Wire Line
 	10450 1950 9800 1950
 Wire Wire Line
 	10450 2050 9800 2050
 Wire Wire Line
 	10450 2150 9800 2150
-Text Label 10125 1700 2    50   ~ 0
+Text Label 8250 2150 2    50   ~ 0
 CLK_U
-Text Label 10225 1600 2    50   ~ 0
+Text Label 8350 2050 2    50   ~ 0
 CLK_CPU
 Wire Wire Line
-	8575 1450 7925 1450
-Text Label 8275 1350 2    50   ~ 0
-CTC_~CE
-Text Label 8275 1450 2    50   ~ 0
-PIO_~CE
+	8575 1400 7925 1400
 Text Label 10075 5050 0    50   ~ 0
 ~RFSH
 Text Label 10075 5250 0    50   ~ 0
@@ -1393,13 +1353,9 @@ Wire Notes Line
 Wire Wire Line
 	750  5350 1450 5350
 Wire Wire Line
-	8575 1550 7925 1550
-Text Label 8000 1550 0    50   ~ 0
-IDE_~CE~
-Text Label 8125 1950 2    50   ~ 0
-~WR
+	8575 1500 7925 1500
 Wire Wire Line
-	8575 1950 7925 1950
+	8575 1900 7925 1900
 Wire Wire Line
 	9800 950  10450 950 
 Wire Wire Line
@@ -1501,4 +1457,63 @@ $EndComp
 Wire Wire Line
 	2600 1950 2700 1950
 Connection ~ 750  5350
+$Sheet
+S 8575 800  1225 1600
+U 5DFE5C15
+F0 "Peripherals" 50
+F1 "peripherals.sch" 50
+F2 "A[0..2]" I L 8575 900 50 
+F3 "CLK_7328" I L 8575 2150 50 
+F4 "SIO_~CE~" I L 8575 1200 50 
+F5 "~RESET~" I R 9800 2325 50 
+F6 "~M1" I L 8575 1600 50 
+F7 "~IORQ" I L 8575 1700 50 
+F8 "~RD" I L 8575 1800 50 
+F9 "CLK" I L 8575 2050 50 
+F10 "IEI" I R 9800 2050 50 
+F11 "CTC_~CE" I L 8575 1300 50 
+F12 "PIO_~CE~" I L 8575 1400 50 
+F13 "~INT" O R 9800 1950 50 
+F14 "D[0..7]" T L 8575 1000 50 
+F15 "IEO_2" O R 9800 2150 50 
+F16 "IDE_~CE" I L 8575 1500 50 
+F17 "~WR" I L 8575 1900 50 
+F18 "TXA" O R 9800 950 50 
+F19 "RXA" I R 9800 1050 50 
+F20 "RXB" I R 9800 1200 50 
+F21 "TXB" O R 9800 1300 50 
+F22 "CT0" I L 8575 2250 50 
+F23 "CT3" I L 8575 2350 50 
+F24 "CLK_B" O R 9800 1650 50 
+$EndSheet
+Wire Wire Line
+	8575 2250 7925 2250
+Text Label 8250 2250 2    50   ~ 0
+CT0
+Wire Bus Line
+	8575 900  7925 900 
+Text Label 8125 1900 2    50   ~ 0
+~WR
+Text Label 8000 1500 0    50   ~ 0
+IDE_~CE~
+Text Label 8275 1400 2    50   ~ 0
+PIO_~CE
+Text Label 8275 1300 2    50   ~ 0
+CTC_~CE
+Text Label 8125 1800 2    50   ~ 0
+~RD
+Text Label 8000 1700 0    50   ~ 0
+~IORQ
+Text Label 8275 1200 2    50   ~ 0
+SIO_~CE
+Text Label 8125 1600 2    50   ~ 0
+~M1
+Wire Wire Line
+	8575 2350 7925 2350
+Text Label 8250 2350 2    50   ~ 0
+CT3
+Wire Wire Line
+	9800 1650 10450 1650
+Text Label 10100 1650 2    50   ~ 0
+CLK2
 $EndSCHEMATC
