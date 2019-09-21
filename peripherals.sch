@@ -28,21 +28,21 @@ F 3 "~" H 4675 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5375 6150 4975 6150
-Wire Wire Line
-	5375 6050 4975 6050
-Wire Wire Line
-	5375 5950 4975 5950
-Wire Wire Line
-	5375 5850 4975 5850
-Wire Wire Line
-	5375 5750 4975 5750
-Wire Wire Line
-	5375 5650 4975 5650
+	5375 5450 4975 5450
 Wire Wire Line
 	5375 5550 4975 5550
 Wire Wire Line
-	5375 5450 4975 5450
+	5375 5650 4975 5650
+Wire Wire Line
+	5375 5750 4975 5750
+Wire Wire Line
+	5375 5850 4975 5850
+Wire Wire Line
+	5375 5950 4975 5950
+Wire Wire Line
+	5375 6050 4975 6050
+Wire Wire Line
+	5375 6150 4975 6150
 Wire Wire Line
 	5375 5350 4975 5350
 Wire Wire Line
@@ -51,10 +51,6 @@ Wire Wire Line
 	5475 6250 4975 6250
 Wire Wire Line
 	4475 5150 4075 5150
-Wire Wire Line
-	4475 6150 4075 6150
-Wire Wire Line
-	4475 6050 4075 6050
 Wire Wire Line
 	4475 5950 4075 5950
 Wire Wire Line
@@ -72,363 +68,189 @@ Wire Wire Line
 Wire Wire Line
 	4475 5250 4075 5250
 Wire Wire Line
+	4475 6050 4075 6050
+Wire Wire Line
+	4475 6150 4075 6150
+Wire Wire Line
 	4475 6250 4075 6250
-Text Label 4225 5350 0    50   ~ 0
-ARDY
-Text Label 4225 5250 0    50   ~ 0
-~ASTB
 Text Label 5075 5350 0    50   ~ 0
 BRDY
 Text Label 5075 5250 0    50   ~ 0
 ~BSTB
 $Comp
-L power:GND #PWR?
-U 1 1 5E05EBD3
-P 4825 3625
-AR Path="/5E05EBD3" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5E05EBD3" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5E05EBD3" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5E05EBD3" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5E05EBD3" Ref="#PWR?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBD3" Ref="#PWR062"  Part="1" 
-F 0 "#PWR062" H 4825 3375 50  0001 C CNN
-F 1 "GND" H 4830 3452 50  0000 C CNN
-F 2 "" H 4825 3625 50  0001 C CNN
-F 3 "" H 4825 3625 50  0001 C CNN
-	1    4825 3625
-	1    0    0    -1  
-$EndComp
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EBDA
-P 4475 2925
-AR Path="/5E05EBDA" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBDA" Ref="R23"  Part="1" 
-F 0 "R23" V 4450 3000 50  0000 L CNN
-F 1 "2K2" V 4475 2875 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4475 2925 50  0001 C CNN
-F 3 "~" H 4475 2925 50  0001 C CNN
-	1    4475 2925
-	0    1    1    0   
-$EndComp
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EBE0
-P 4650 2600
-AR Path="/5E05EBE0" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBE0" Ref="R31"  Part="1" 
-F 0 "R31" H 4450 2650 50  0000 L CNN
-F 1 "100K" H 4400 2550 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4650 2600 50  0001 C CNN
-F 3 "~" H 4650 2600 50  0001 C CNN
-	1    4650 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L THS-80-rescue:GND-power-sbc_z80-rescue #PWR?
-U 1 1 5E05EBE6
-P 4975 2825
-AR Path="/5E05EBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5E05EBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5E05EBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5E05EBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5E05EBE6" Ref="#PWR?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBE6" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 4975 2575 50  0001 C CNN
-F 1 "GND" H 4980 2652 50  0000 C CNN
-F 2 "" H 4975 2825 50  0001 C CNN
-F 3 "" H 4975 2825 50  0001 C CNN
-	1    4975 2825
-	0    1    1    0   
-$EndComp
-Text Label 4175 2925 0    50   ~ 0
-~RTSB
-Text Label 4200 3325 0    50   ~ 0
-~CTSB
-Text Label 4200 3225 0    50   ~ 0
-TXB
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EBEF
-P 4825 3525
-AR Path="/5E05EBEF" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBEF" Ref="R33"  Part="1" 
-F 0 "R33" H 4884 3571 50  0000 L CNN
-F 1 "100K" H 4884 3480 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4825 3525 50  0001 C CNN
-F 3 "~" H 4825 3525 50  0001 C CNN
-	1    4825 3525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x06 J?
-U 1 1 5E05EBF5
-P 5175 3025
-AR Path="/5E05EBF5" Ref="J?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBF5" Ref="J8"  Part="1" 
-F 0 "J8" H 5255 3017 50  0000 L CNN
-F 1 "Port B" H 5255 2926 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 5175 3025 50  0001 C CNN
-F 3 "~" H 5175 3025 50  0001 C CNN
-	1    5175 3025
-	1    0    0    -1  
-$EndComp
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EBFB
-P 4475 3225
-AR Path="/5E05EBFB" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EBFB" Ref="R25"  Part="1" 
-F 0 "R25" V 4450 3300 50  0000 L CNN
-F 1 "2K2" V 4475 3175 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4475 3225 50  0001 C CNN
-F 3 "~" H 4475 3225 50  0001 C CNN
-	1    4475 3225
-	0    1    1    0   
-$EndComp
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EC01
-P 4475 3125
-AR Path="/5E05EC01" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EC01" Ref="R24"  Part="1" 
-F 0 "R24" V 4425 3200 50  0000 L CNN
-F 1 "2K2" V 4475 3075 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4475 3125 50  0001 C CNN
-F 3 "~" H 4475 3125 50  0001 C CNN
-	1    4475 3125
-	0    1    1    0   
-$EndComp
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EC07
-P 4475 3325
-AR Path="/5E05EC07" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EC07" Ref="R26"  Part="1" 
-F 0 "R26" V 4450 3400 50  0000 L CNN
-F 1 "2K2" V 4475 3275 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4475 3325 50  0001 C CNN
-F 3 "~" H 4475 3325 50  0001 C CNN
-	1    4475 3325
-	0    1    1    0   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5E05EC0D
-P 4650 2450
-AR Path="/5E05EC0D" Ref="#PWR?"  Part="1" 
-AR Path="/5DFE5C15/5E05EC0D" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 4650 2300 50  0001 C CNN
-F 1 "VCC" H 4650 2600 50  0000 C CNN
-F 2 "" H 4650 2450 50  0001 C CNN
-F 3 "" H 4650 2450 50  0001 C CNN
-	1    4650 2450
-	1    0    0    -1  
-$EndComp
-$Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC13
-P 4500 1425
+P 4500 1100
 AR Path="/5E05EC13" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC13" Ref="R28"  Part="1" 
-F 0 "R28" V 4450 1500 50  0000 L CNN
-F 1 "2K2" V 4500 1375 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1425 50  0001 C CNN
-F 3 "~" H 4500 1425 50  0001 C CNN
-	1    4500 1425
+F 0 "R28" V 4425 1025 50  0000 L CNN
+F 1 "2K2" V 4500 1050 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1100 50  0001 C CNN
+F 3 "~" H 4500 1100 50  0001 C CNN
+	1    4500 1100
 	0    1    1    0   
 $EndComp
 $Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC19
-P 4500 1225
+P 4500 900
 AR Path="/5E05EC19" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC19" Ref="R27"  Part="1" 
-F 0 "R27" V 4475 1300 50  0000 L CNN
-F 1 "2K2" V 4500 1175 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1225 50  0001 C CNN
-F 3 "~" H 4500 1225 50  0001 C CNN
-	1    4500 1225
+F 0 "R27" V 4425 825 50  0000 L CNN
+F 1 "2K2" V 4500 850 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 900 50  0001 C CNN
+F 3 "~" H 4500 900 50  0001 C CNN
+	1    4500 900 
 	0    1    1    0   
 $EndComp
 $Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC1F
-P 4500 1625
+P 4500 1300
 AR Path="/5E05EC1F" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC1F" Ref="R30"  Part="1" 
-F 0 "R30" V 4475 1700 50  0000 L CNN
-F 1 "2K2" V 4500 1575 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1625 50  0001 C CNN
-F 3 "~" H 4500 1625 50  0001 C CNN
-	1    4500 1625
+F 0 "R30" V 4575 1225 50  0000 L CNN
+F 1 "2K2" V 4500 1250 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1300 50  0001 C CNN
+F 3 "~" H 4500 1300 50  0001 C CNN
+	1    4500 1300
 	0    1    1    0   
 $EndComp
 $Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC25
-P 4500 1525
+P 4500 1200
 AR Path="/5E05EC25" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC25" Ref="R29"  Part="1" 
-F 0 "R29" V 4475 1600 50  0000 L CNN
-F 1 "2K2" V 4500 1475 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1525 50  0001 C CNN
-F 3 "~" H 4500 1525 50  0001 C CNN
-	1    4500 1525
+F 0 "R29" V 4475 1275 50  0000 L CNN
+F 1 "2K2" V 4500 1150 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 1200 50  0001 C CNN
+F 3 "~" H 4500 1200 50  0001 C CNN
+	1    4500 1200
 	0    1    1    0   
 $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5E05EC2B
-P 4675 725
+P 4675 400
 AR Path="/5E05EC2B" Ref="#PWR?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC2B" Ref="#PWR061"  Part="1" 
-F 0 "#PWR061" H 4675 575 50  0001 C CNN
-F 1 "VCC" H 4675 875 50  0000 C CNN
-F 2 "" H 4675 725 50  0001 C CNN
-F 3 "" H 4675 725 50  0001 C CNN
-	1    4675 725 
+F 0 "#PWR061" H 4675 250 50  0001 C CNN
+F 1 "VCC" H 4675 550 50  0000 C CNN
+F 2 "" H 4675 400 50  0001 C CNN
+F 3 "" H 4675 400 50  0001 C CNN
+	1    4675 400 
 	1    0    0    -1  
 $EndComp
-Text Label 4200 3125 0    50   ~ 0
-RXB
 $Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC3F
-P 4675 900
+P 4675 575
 AR Path="/5E05EC3F" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC3F" Ref="R32"  Part="1" 
-F 0 "R32" H 4450 950 50  0000 L CNN
-F 1 "100K" H 4450 850 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4675 900 50  0001 C CNN
-F 3 "~" H 4675 900 50  0001 C CNN
-	1    4675 900 
+F 0 "R32" H 4450 625 50  0000 L CNN
+F 1 "100K" H 4450 525 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4675 575 50  0001 C CNN
+F 3 "~" H 4675 575 50  0001 C CNN
+	1    4675 575 
 	1    0    0    -1  
 $EndComp
 $Comp
 L THS-80-rescue:GND-power-sbc_z80-rescue #PWR?
 U 1 1 5E05EC45
-P 5000 1125
+P 5000 800
 AR Path="/5E05EC45" Ref="#PWR?"  Part="1" 
 AR Path="/5CB63856/5E05EC45" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5E05EC45" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5E05EC45" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5E05EC45" Ref="#PWR?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC45" Ref="#PWR065"  Part="1" 
-F 0 "#PWR065" H 5000 875 50  0001 C CNN
-F 1 "GND" H 5005 952 50  0000 C CNN
-F 2 "" H 5000 1125 50  0001 C CNN
-F 3 "" H 5000 1125 50  0001 C CNN
-	1    5000 1125
+F 0 "#PWR065" H 5000 550 50  0001 C CNN
+F 1 "GND" V 4950 800 50  0000 C CNN
+F 2 "" H 5000 800 50  0001 C CNN
+F 3 "" H 5000 800 50  0001 C CNN
+	1    5000 800 
 	0    1    1    0   
 $EndComp
-Text Label 4200 1225 0    50   ~ 0
+Text Label 4200 900  0    50   ~ 0
 ~RTSA
 $Comp
 L power:GND #PWR?
 U 1 1 5E05EC4C
-P 4850 1925
+P 4850 1600
 AR Path="/5E05EC4C" Ref="#PWR?"  Part="1" 
 AR Path="/5CB63856/5E05EC4C" Ref="#PWR?"  Part="1" 
 AR Path="/5CB5AB00/5CB63856/5E05EC4C" Ref="#PWR?"  Part="1" 
 AR Path="/5CFABACD/5E05EC4C" Ref="#PWR?"  Part="1" 
 AR Path="/5CF9C1ED/5E05EC4C" Ref="#PWR?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC4C" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 4850 1675 50  0001 C CNN
-F 1 "GND" H 4855 1752 50  0000 C CNN
-F 2 "" H 4850 1925 50  0001 C CNN
-F 3 "" H 4850 1925 50  0001 C CNN
-	1    4850 1925
+F 0 "#PWR063" H 4850 1350 50  0001 C CNN
+F 1 "GND" H 4855 1427 50  0000 C CNN
+F 2 "" H 4850 1600 50  0001 C CNN
+F 3 "" H 4850 1600 50  0001 C CNN
+	1    4850 1600
 	1    0    0    -1  
 $EndComp
-Text Label 4225 1625 0    50   ~ 0
+Text Label 4225 1300 0    50   ~ 0
 ~CTSA
-Text Label 4225 1525 0    50   ~ 0
+Text Label 4225 1200 0    50   ~ 0
 TXA
-Text Label 4225 1425 0    50   ~ 0
+Text Label 4225 1100 0    50   ~ 0
 RXA
 $Comp
 L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
 U 1 1 5E05EC55
-P 4850 1825
+P 4850 1500
 AR Path="/5E05EC55" Ref="R?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC55" Ref="R34"  Part="1" 
-F 0 "R34" H 4909 1871 50  0000 L CNN
-F 1 "100K" H 4909 1780 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4850 1825 50  0001 C CNN
-F 3 "~" H 4850 1825 50  0001 C CNN
-	1    4850 1825
+F 0 "R34" H 4909 1546 50  0000 L CNN
+F 1 "100K" H 4909 1455 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4850 1500 50  0001 C CNN
+F 3 "~" H 4850 1500 50  0001 C CNN
+	1    4850 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J?
 U 1 1 5E05EC5B
-P 5200 1325
+P 5200 1000
 AR Path="/5E05EC5B" Ref="J?"  Part="1" 
 AR Path="/5DFE5C15/5E05EC5B" Ref="J9"  Part="1" 
-F 0 "J9" H 5280 1317 50  0000 L CNN
-F 1 "Port A" H 5280 1226 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 5200 1325 50  0001 C CNN
-F 3 "~" H 5200 1325 50  0001 C CNN
-	1    5200 1325
+F 0 "J9" H 5280 992 50  0000 L CNN
+F 1 "Port A" H 5280 901 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 5200 1000 50  0001 C CNN
+F 3 "~" H 5200 1000 50  0001 C CNN
+	1    5200 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4675 725  4675 775 
+	4675 400  4675 450 
 Wire Wire Line
-	4650 2450 4650 2475
+	4175 1300 4400 1300
 Wire Wire Line
-	4375 3325 4125 3325
+	4175 1200 4400 1200
 Wire Wire Line
-	4375 3225 4125 3225
+	4175 1100 4400 1100
 Wire Wire Line
-	4375 3125 4125 3125
+	4175 900  4400 900 
 Wire Wire Line
-	4375 2925 4125 2925
+	4850 1300 4600 1300
 Wire Wire Line
-	4175 1625 4400 1625
+	4850 1400 4850 1300
 Wire Wire Line
-	4175 1525 4400 1525
+	4675 1100 4600 1100
 Wire Wire Line
-	4175 1425 4400 1425
+	4675 675  4675 1100
 Wire Wire Line
-	4175 1225 4400 1225
+	5000 1300 4850 1300
 Wire Wire Line
-	4825 3325 4575 3325
+	5000 1200 4600 1200
 Wire Wire Line
-	4825 3425 4825 3325
+	5000 1100 4675 1100
 Wire Wire Line
-	4650 3125 4575 3125
-Wire Wire Line
-	4650 2700 4650 3125
-Wire Wire Line
-	4975 3325 4825 3325
-Wire Wire Line
-	4975 3225 4575 3225
-Wire Wire Line
-	4975 2925 4575 2925
-Wire Wire Line
-	4975 3125 4650 3125
-Wire Wire Line
-	4850 1625 4600 1625
-Wire Wire Line
-	4850 1725 4850 1625
-Wire Wire Line
-	4675 1425 4600 1425
-Wire Wire Line
-	4675 1000 4675 1425
-Wire Wire Line
-	5000 1625 4850 1625
-Wire Wire Line
-	5000 1525 4600 1525
-Wire Wire Line
-	5000 1425 4675 1425
-Wire Wire Line
-	5000 1225 4600 1225
-Connection ~ 4825 3325
-Connection ~ 4650 3125
-Connection ~ 4850 1625
-Connection ~ 4675 1425
+	5000 900  4600 900 
+Connection ~ 4850 1300
+Connection ~ 4675 1100
 $Comp
 L power:VCC #PWR?
 U 1 1 5E05ECEB
@@ -491,78 +313,60 @@ F 3 "" H 5500 5150 50  0001 C CNN
 	1    5500 5150
 	1    0    0    -1  
 $EndComp
-Text Label 5075 5450 0    50   ~ 0
-PB0
-Text Label 5075 5550 0    50   ~ 0
-PB1
-Text Label 5075 5650 0    50   ~ 0
-PB2
-Text Label 5075 5750 0    50   ~ 0
-PB3
-Text Label 5075 5850 0    50   ~ 0
-PB4
-Text Label 5075 5950 0    50   ~ 0
-PB5
-Text Label 5075 6050 0    50   ~ 0
-PB6
 Text Label 5075 6150 0    50   ~ 0
+PB0
+Text Label 5075 6050 0    50   ~ 0
+PB1
+Text Label 5075 5950 0    50   ~ 0
+PB2
+Text Label 5075 5850 0    50   ~ 0
+PB3
+Text Label 5075 5750 0    50   ~ 0
+PB4
+Text Label 5075 5650 0    50   ~ 0
+PB5
+Text Label 5075 5550 0    50   ~ 0
+PB6
+Text Label 5075 5450 0    50   ~ 0
 PB7
-Text Label 4225 5450 0    50   ~ 0
+Text Label 4225 5250 0    50   ~ 0
 PA0
-Text Label 4225 5550 0    50   ~ 0
+Text Label 4225 5350 0    50   ~ 0
 PA1
-Text Label 4225 5650 0    50   ~ 0
+Text Label 4225 5450 0    50   ~ 0
 PA2
-Text Label 4225 5750 0    50   ~ 0
+Text Label 4225 5550 0    50   ~ 0
 PA3
-Text Label 4225 5850 0    50   ~ 0
+Text Label 4225 5650 0    50   ~ 0
 PA4
-Text Label 4225 5950 0    50   ~ 0
+Text Label 4225 5750 0    50   ~ 0
 PA5
-Text Label 4225 6050 0    50   ~ 0
+Text Label 4225 5850 0    50   ~ 0
 PA6
-Text Label 4225 6150 0    50   ~ 0
+Text Label 4225 5950 0    50   ~ 0
 PA7
 Wire Wire Line
 	4975 5150 5500 5150
 Text HLabel 9700 1650 2    50   Input ~ 0
 CLK_7328
 $Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 5D92266C
-P 4875 3025
-F 0 "JP2" H 4875 3210 50  0000 C CNN
-F 1 "5V" H 4875 3119 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4875 3025 50  0001 C CNN
-F 3 "~" H 4875 3025 50  0001 C CNN
-	1    4875 3025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4775 3025 4775 2475
-Wire Wire Line
-	4775 2475 4650 2475
-Connection ~ 4650 2475
-Wire Wire Line
-	4650 2475 4650 2500
-$Comp
 L Device:Jumper_NO_Small JP3
 U 1 1 5D934FDF
-P 4900 1325
-F 0 "JP3" H 4900 1510 50  0000 C CNN
-F 1 "5V" H 4900 1419 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4900 1325 50  0001 C CNN
-F 3 "~" H 4900 1325 50  0001 C CNN
-	1    4900 1325
+P 4900 1000
+F 0 "JP3" H 4900 1050 50  0000 C CNN
+F 1 "5V" H 4850 1400 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4900 1000 50  0001 C CNN
+F 3 "~" H 4900 1000 50  0001 C CNN
+	1    4900 1000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4800 1325 4800 775 
+	4800 1000 4800 450 
 Wire Wire Line
-	4800 775  4675 775 
-Connection ~ 4675 775 
+	4800 450  4675 450 
+Connection ~ 4675 450 
 Wire Wire Line
-	4675 775  4675 800 
+	4675 450  4675 475 
 Wire Wire Line
 	1750 1050 1200 1050
 Wire Wire Line
@@ -668,11 +472,7 @@ Wire Wire Line
 Wire Wire Line
 	3700 1800 3150 1800
 Wire Wire Line
-	3700 2250 3150 2250
-Wire Wire Line
 	3700 2350 3150 2350
-Wire Wire Line
-	3700 2450 3150 2450
 Wire Wire Line
 	3700 2550 3150 2550
 Wire Wire Line
@@ -1694,7 +1494,7 @@ Wire Notes Line
 Wire Notes Line
 	500  3850 500  500 
 Wire Notes Line
-	500  500  5550 500 
+	650  125  5700 125 
 Wire Notes Line
 	11000 550  11000 3700
 Wire Notes Line
@@ -1705,10 +1505,6 @@ Text HLabel 3700 1250 2    50   Output ~ 0
 TXA
 Text HLabel 3700 1050 2    50   Input ~ 0
 RXA
-Text HLabel 3700 2250 2    50   Input ~ 0
-RXB
-Text HLabel 3700 2450 2    50   Output ~ 0
-TXB
 Entry Wire Line
 	8800 5750 8900 5850
 Entry Wire Line
@@ -1851,20 +1647,236 @@ Text Label 3300 2350 0    50   ~ 0
 CLK_B
 Text Label 3300 2550 0    50   ~ 0
 CLK_B
-Wire Bus Line
-	1100 1950 1100 2100
-Wire Bus Line
-	1100 5600 1100 5750
-Wire Bus Line
-	7100 2000 7100 2150
+Text Label 4800 1100 0    50   ~ 0
+RA
+Text Label 4800 1200 0    50   ~ 0
+TA
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA88E
+P 4525 2750
+AR Path="/5DBFA88E" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA88E" Ref="R25"  Part="1" 
+F 0 "R25" V 4450 2675 50  0000 L CNN
+F 1 "2K2" V 4525 2700 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4525 2750 50  0001 C CNN
+F 3 "~" H 4525 2750 50  0001 C CNN
+	1    4525 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA894
+P 4525 2550
+AR Path="/5DBFA894" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA894" Ref="R24"  Part="1" 
+F 0 "R24" V 4450 2475 50  0000 L CNN
+F 1 "2K2" V 4525 2500 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4525 2550 50  0001 C CNN
+F 3 "~" H 4525 2550 50  0001 C CNN
+	1    4525 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA89A
+P 4525 2950
+AR Path="/5DBFA89A" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA89A" Ref="R31"  Part="1" 
+F 0 "R31" V 4600 2875 50  0000 L CNN
+F 1 "2K2" V 4525 2900 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4525 2950 50  0001 C CNN
+F 3 "~" H 4525 2950 50  0001 C CNN
+	1    4525 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA8A0
+P 4525 2850
+AR Path="/5DBFA8A0" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8A0" Ref="R26"  Part="1" 
+F 0 "R26" V 4500 2925 50  0000 L CNN
+F 1 "2K2" V 4525 2800 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4525 2850 50  0001 C CNN
+F 3 "~" H 4525 2850 50  0001 C CNN
+	1    4525 2850
+	0    1    1    0   
+$EndComp
+$Comp
+L power:VCC #PWR?
+U 1 1 5DBFA8A6
+P 4700 2050
+AR Path="/5DBFA8A6" Ref="#PWR?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8A6" Ref="#PWR060"  Part="1" 
+F 0 "#PWR060" H 4700 1900 50  0001 C CNN
+F 1 "VCC" H 4700 2200 50  0000 C CNN
+F 2 "" H 4700 2050 50  0001 C CNN
+F 3 "" H 4700 2050 50  0001 C CNN
+	1    4700 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA8AC
+P 4700 2225
+AR Path="/5DBFA8AC" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8AC" Ref="R23"  Part="1" 
+F 0 "R23" H 4475 2275 50  0000 L CNN
+F 1 "100K" H 4475 2175 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4700 2225 50  0001 C CNN
+F 3 "~" H 4700 2225 50  0001 C CNN
+	1    4700 2225
+	1    0    0    -1  
+$EndComp
+$Comp
+L THS-80-rescue:GND-power-sbc_z80-rescue #PWR?
+U 1 1 5DBFA8B2
+P 5025 2450
+AR Path="/5DBFA8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5DBFA8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5DBFA8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5DBFA8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5CF9C1ED/5DBFA8B2" Ref="#PWR?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8B2" Ref="#PWR062"  Part="1" 
+F 0 "#PWR062" H 5025 2200 50  0001 C CNN
+F 1 "GND" V 4925 2450 50  0000 C CNN
+F 2 "" H 5025 2450 50  0001 C CNN
+F 3 "" H 5025 2450 50  0001 C CNN
+	1    5025 2450
+	0    1    1    0   
+$EndComp
+Text Label 4225 2550 0    50   ~ 0
+~RTSB
+$Comp
+L power:GND #PWR?
+U 1 1 5DBFA8B9
+P 4875 3250
+AR Path="/5DBFA8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5CB63856/5DBFA8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5DBFA8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5DBFA8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5CF9C1ED/5DBFA8B9" Ref="#PWR?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8B9" Ref="#PWR064"  Part="1" 
+F 0 "#PWR064" H 4875 3000 50  0001 C CNN
+F 1 "GND" H 4880 3077 50  0000 C CNN
+F 2 "" H 4875 3250 50  0001 C CNN
+F 3 "" H 4875 3250 50  0001 C CNN
+	1    4875 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5DBFA8C2
+P 4875 3150
+AR Path="/5DBFA8C2" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8C2" Ref="R33"  Part="1" 
+F 0 "R33" H 4934 3196 50  0000 L CNN
+F 1 "100K" H 4934 3105 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4875 3150 50  0001 C CNN
+F 3 "~" H 4875 3150 50  0001 C CNN
+	1    4875 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 5DBFA8C8
+P 5225 2650
+AR Path="/5DBFA8C8" Ref="J?"  Part="1" 
+AR Path="/5DFE5C15/5DBFA8C8" Ref="J8"  Part="1" 
+F 0 "J8" H 5305 2642 50  0000 L CNN
+F 1 "Port A" H 5305 2551 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Horizontal" H 5225 2650 50  0001 C CNN
+F 3 "~" H 5225 2650 50  0001 C CNN
+	1    5225 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 2050 4700 2100
+Wire Wire Line
+	4100 2950 4425 2950
+Wire Wire Line
+	4100 2550 4425 2550
+Wire Wire Line
+	4875 2950 4625 2950
+Wire Wire Line
+	4875 3050 4875 2950
+Wire Wire Line
+	4700 2750 4625 2750
+Wire Wire Line
+	4700 2325 4700 2750
+Wire Wire Line
+	5025 2950 4875 2950
+Wire Wire Line
+	5025 2850 4625 2850
+Wire Wire Line
+	5025 2750 4700 2750
+Wire Wire Line
+	5025 2550 4625 2550
+Connection ~ 4875 2950
+Connection ~ 4700 2750
+$Comp
+L Device:Jumper_NO_Small JP2
+U 1 1 5DBFA8DD
+P 4925 2650
+F 0 "JP2" H 4925 2700 50  0000 C CNN
+F 1 "5V" H 4875 3000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4925 2650 50  0001 C CNN
+F 3 "~" H 4925 2650 50  0001 C CNN
+	1    4925 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4825 2650 4825 2100
+Wire Wire Line
+	4825 2100 4700 2100
+Connection ~ 4700 2100
+Wire Wire Line
+	4700 2100 4700 2125
+Text Label 4925 2850 0    50   ~ 0
+TB
+Text Label 4925 2750 0    50   ~ 0
+RB
+Wire Wire Line
+	3150 2450 3800 2450
+Wire Wire Line
+	4100 2850 4425 2850
+Text Label 4225 2750 0    50   ~ 0
+RXB
+Text Label 4225 2850 0    50   ~ 0
+TXB
+Wire Wire Line
+	3150 2250 3700 2250
+Wire Wire Line
+	4425 2750 4100 2750
+Text Label 4925 2550 0    50   ~ 0
+RTB
+Text Label 4925 2950 0    50   ~ 0
+CTB
+Text Label 4875 900  0    50   ~ 0
+RTA
+Text Label 4900 1300 0    50   ~ 0
+CTA
+Text Label 4225 6050 0    50   ~ 0
+ARDY
+Text Label 4225 6150 0    50   ~ 0
+~ASTB
+Text Label 4250 2950 0    50   ~ 0
+~CTSB
 Wire Bus Line
 	10600 5900 10600 6200
 Wire Bus Line
+	7100 2000 7100 2150
+Wire Bus Line
+	1100 5600 1100 5750
+Wire Bus Line
+	1100 1950 1100 2100
+Wire Bus Line
 	8800 5700 8800 5950
 Wire Bus Line
-	1100 1050 1100 1850
+	7100 1100 7100 1900
 Wire Bus Line
 	1100 4700 1100 5500
 Wire Bus Line
-	7100 1100 7100 1900
+	1100 1050 1100 1850
 $EndSCHEMATC
