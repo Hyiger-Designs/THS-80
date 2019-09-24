@@ -127,7 +127,7 @@ AR Path="/5CFABACD/5D0BF766/5DC12F5E" Ref="R?"  Part="1"
 AR Path="/5D1AF052/5DC12F5E" Ref="R?"  Part="1" 
 AR Path="/5DC12F5E" Ref="R?"  Part="1" 
 AR Path="/5D70CA34/5DC12F5E" Ref="R10"  Part="1" 
-F 0 "R10" H 4000 6100 50  0000 L CNN
+F 0 "R10" H 4050 6000 50  0000 L CNN
 F 1 "1K" V 4000 5950 32  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4000 6000 50  0001 C CNN
 F 3 "~" H 4000 6000 50  0001 C CNN
@@ -953,7 +953,7 @@ AR Path="/5DC12FA5" Ref="J?"  Part="1"
 AR Path="/5D70CA34/5DC12FA5" Ref="J5"  Part="1" 
 F 0 "J5" H 3340 5500 50  0000 R CNN
 F 1 "JTAG" H 3060 6000 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" V 3150 5650 50  0001 C CNN
+F 2 "Connector_Multicomp:Multicomp_MC9A12-1034_2x05_P2.54mm_Vertical" V 3150 5650 50  0001 C CNN
 F 3 "~" H 2025 4950 50  0001 C CNN
 	1    3300 5500
 	1    0    0    -1  
@@ -1244,35 +1244,6 @@ Wire Wire Line
 Wire Wire Line
 	5450 4600 5450 4750
 $Comp
-L power:VCC #PWR?
-U 1 1 5DC12F7A
-P 4200 4900
-AR Path="/5DC12F7A" Ref="#PWR?"  Part="1" 
-AR Path="/5D70CA34/5DC12F7A" Ref="#PWR022"  Part="1" 
-F 0 "#PWR022" H 4200 4750 50  0001 C CNN
-F 1 "VCC" H 4190 5050 50  0000 C CNN
-F 2 "" H 4200 4900 50  0001 C CNN
-F 3 "" H 4200 4900 50  0001 C CNN
-	1    4200 4900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5DC12F74
-P 4300 5000
-AR Path="/5D0F9837/5DC12F74" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5D0BF766/5DC12F74" Ref="R?"  Part="1" 
-AR Path="/5D1AF052/5DC12F74" Ref="R?"  Part="1" 
-AR Path="/5DC12F74" Ref="R?"  Part="1" 
-AR Path="/5D70CA34/5DC12F74" Ref="R13"  Part="1" 
-F 0 "R13" H 4350 5000 50  0000 L CNN
-F 1 "10K" V 4300 4950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4300 5000 50  0001 C CNN
-F 3 "~" H 4300 5000 50  0001 C CNN
-	1    4300 5000
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small R?
 U 1 1 5DC12F6E
 P 4200 5000
@@ -1281,7 +1252,7 @@ AR Path="/5CFABACD/5D0BF766/5DC12F6E" Ref="R?"  Part="1"
 AR Path="/5D1AF052/5DC12F6E" Ref="R?"  Part="1" 
 AR Path="/5DC12F6E" Ref="R?"  Part="1" 
 AR Path="/5D70CA34/5DC12F6E" Ref="R12"  Part="1" 
-F 0 "R12" H 4200 4850 50  0000 L CNN
+F 0 "R12" H 4250 5000 50  0000 L CNN
 F 1 "10K" V 4100 4950 32  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 5000 50  0001 C CNN
 F 3 "~" H 4200 5000 50  0001 C CNN
@@ -1305,10 +1276,6 @@ F 3 "~" H 4100 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3800 5600 4200 5600
-Wire Wire Line
-	3800 5700 4300 5700
-Wire Wire Line
 	3800 5500 4100 5500
 Wire Wire Line
 	4000 5400 4800 5400
@@ -1318,20 +1285,7 @@ Connection ~ 4100 5500
 Wire Wire Line
 	4100 5500 4800 5500
 Wire Wire Line
-	4200 5100 4200 5600
-Connection ~ 4200 5600
-Wire Wire Line
-	4200 5600 4800 5600
-Wire Wire Line
-	4300 5100 4300 5700
-Connection ~ 4300 5700
-Wire Wire Line
-	4100 4900 4200 4900
-Connection ~ 4200 4900
-Wire Wire Line
-	4200 4900 4300 4900
-Wire Wire Line
-	4300 5700 4700 5700
+	4100 4900 4150 4900
 Wire Wire Line
 	4700 6150 4700 5700
 Wire Wire Line
@@ -1357,6 +1311,33 @@ Wire Wire Line
 	4000 5400 4000 5900
 Wire Wire Line
 	5450 4750 6750 4750
+Wire Wire Line
+	3800 5700 4200 5700
+$Comp
+L power:VCC #PWR?
+U 1 1 5DA39994
+P 4150 4850
+AR Path="/5DA39994" Ref="#PWR?"  Part="1" 
+AR Path="/5D70CA34/5DA39994" Ref="#PWR022"  Part="1" 
+F 0 "#PWR022" H 4150 4700 50  0001 C CNN
+F 1 "VCC" H 4167 5023 50  0000 C CNN
+F 2 "" H 4150 4850 50  0001 C CNN
+F 3 "" H 4150 4850 50  0001 C CNN
+	1    4150 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4850 4150 4900
+Connection ~ 4150 4900
+Wire Wire Line
+	4150 4900 4200 4900
+Wire Wire Line
+	3800 5600 4800 5600
+Wire Wire Line
+	4200 5100 4200 5700
+Connection ~ 4200 5700
+Wire Wire Line
+	4200 5700 4700 5700
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line
