@@ -1344,8 +1344,8 @@ U 1 1 5D8DCE07
 P 2500 5050
 AR Path="/5D65A6A0/5D8DCE07" Ref="C?"  Part="1" 
 AR Path="/5D8DCE07" Ref="C?"  Part="1" 
-AR Path="/5D70CA34/5D8DCE07" Ref="C?"  Part="1" 
-F 0 "C?" H 2600 5150 50  0000 L CNN
+AR Path="/5D70CA34/5D8DCE07" Ref="C30"  Part="1" 
+F 0 "C30" H 2600 5150 50  0000 L CNN
 F 1 "100nF" H 2600 5050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2500 5050 50  0001 C CNN
 F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 2500 5050 50  0001 C CNN
@@ -1359,10 +1359,10 @@ F 9 "https://www.mouser.com/ProductDetail/963-JMK107B7474KA-T" H 2592 5196 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0106
 U 1 1 5D8DCE0D
 P 2500 5250
-F 0 "#PWR?" H 2500 5000 50  0001 C CNN
+F 0 "#PWR0106" H 2500 5000 50  0001 C CNN
 F 1 "GND" H 2505 5077 50  0000 C CNN
 F 2 "" H 2500 5250 50  0001 C CNN
 F 3 "" H 2500 5250 50  0001 C CNN
@@ -1377,11 +1377,11 @@ Wire Wire Line
 	2500 4950 2500 4900
 Wire Wire Line
 	2500 4900 3200 4900
+Connection ~ 3200 4900
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line
 	9650 2050 9650 2750
 Wire Bus Line
 	9650 2850 9650 3650
-Connection ~ 3200 4900
 $EndSCHEMATC
