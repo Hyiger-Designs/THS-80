@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
 LIBS:THS-80-cache
-LIBS:de10-lite-ram-rom-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
