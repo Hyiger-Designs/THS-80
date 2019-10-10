@@ -1863,6 +1863,19 @@ F 3 "" H 4050 5150 50  0001 C CNN
 	1    4050 5150
 	1    0    0    -1  
 $EndComp
+$Comp
+L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
+U 1 1 5E05EC3F
+P 4500 925
+AR Path="/5E05EC3F" Ref="R?"  Part="1" 
+AR Path="/5DFE5C15/5E05EC3F" Ref="R21"  Part="1" 
+F 0 "R21" H 4275 975 50  0000 L CNN
+F 1 "100K" V 4500 850 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 925 50  0001 C CNN
+F 3 "~" H 4500 925 50  0001 C CNN
+	1    4500 925 
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	10600 5900 10600 6200
 Wire Bus Line
@@ -1879,17 +1892,4 @@ Wire Bus Line
 	1100 4700 1100 5500
 Wire Bus Line
 	1100 1050 1100 1850
-$Comp
-L THS-80-rescue:R_Small-Device-sbc_z80-rescue R?
-U 1 1 5E05EC3F
-P 4500 925
-AR Path="/5E05EC3F" Ref="R?"  Part="1" 
-AR Path="/5DFE5C15/5E05EC3F" Ref="R21"  Part="1" 
-F 0 "R21" H 4275 975 50  0000 L CNN
-F 1 "100K" V 4500 850 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4500 925 50  0001 C CNN
-F 3 "~" H 4500 925 50  0001 C CNN
-	1    4500 925 
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
