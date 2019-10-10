@@ -1158,22 +1158,6 @@ Wire Wire Line
 	5450 4600 5450 4750
 $Comp
 L Device:R_Small R?
-U 1 1 5DC12F6E
-P 4200 5000
-AR Path="/5D0F9837/5DC12F6E" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5D0BF766/5DC12F6E" Ref="R?"  Part="1" 
-AR Path="/5D1AF052/5DC12F6E" Ref="R?"  Part="1" 
-AR Path="/5DC12F6E" Ref="R?"  Part="1" 
-AR Path="/5D70CA34/5DC12F6E" Ref="R17"  Part="1" 
-F 0 "R17" H 4250 5000 50  0000 L CNN
-F 1 "10K" V 4100 4950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 5000 50  0001 C CNN
-F 3 "~" H 4200 5000 50  0001 C CNN
-	1    4200 5000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5DC12F68
 P 4100 5000
 AR Path="/5D0F9837/5DC12F68" Ref="R?"  Part="1" 
@@ -1197,8 +1181,6 @@ Wire Wire Line
 Connection ~ 4100 5500
 Wire Wire Line
 	4100 5500 4800 5500
-Wire Wire Line
-	4100 4900 4150 4900
 Wire Wire Line
 	4700 6150 4700 5700
 Wire Wire Line
@@ -1225,19 +1207,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 4750 6750 4750
 Wire Wire Line
-	3800 5700 4200 5700
-Wire Wire Line
-	4150 4850 4150 4900
-Connection ~ 4150 4900
-Wire Wire Line
-	4150 4900 4200 4900
-Wire Wire Line
 	3800 5600 4800 5600
-Wire Wire Line
-	4200 5100 4200 5700
-Connection ~ 4200 5700
-Wire Wire Line
-	4200 5700 4700 5700
 $Comp
 L Device:C_Small C?
 U 1 1 5D8DCE07
@@ -1346,14 +1316,14 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5DD9A88F
-P 4150 4850
+P 4100 4900
 AR Path="/5DD9A88F" Ref="#PWR?"  Part="1" 
 AR Path="/5D70CA34/5DD9A88F" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 4150 4700 50  0001 C CNN
-F 1 "VCC" H 4167 5023 50  0000 C CNN
-F 2 "" H 4150 4850 50  0001 C CNN
-F 3 "" H 4150 4850 50  0001 C CNN
-	1    4150 4850
+F 0 "#PWR0118" H 4100 4750 50  0001 C CNN
+F 1 "VCC" H 4117 5073 50  0000 C CNN
+F 2 "" H 4100 4900 50  0001 C CNN
+F 3 "" H 4100 4900 50  0001 C CNN
+	1    4100 4900
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1382,6 +1352,8 @@ F 3 "" H 2650 6800 50  0001 C CNN
 	1    2650 6800
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	3800 5700 4700 5700
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line

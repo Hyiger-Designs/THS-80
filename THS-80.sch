@@ -991,143 +991,6 @@ Text Label 6800 900  0    50   ~ 0
 A[16..18]
 Wire Bus Line
 	7350 900  6700 900 
-$Comp
-L Device:R_Small R6
-U 1 1 5F3BDAB6
-P 6030 4000
-AR Path="/5F3BDAB6" Ref="R6"  Part="1" 
-AR Path="/5D6224DC/5F3BDAB6" Ref="R?"  Part="1" 
-F 0 "R6" V 5955 3925 50  0000 L CNN
-F 1 "10K" V 6030 3950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6030 4000 50  0001 C CNN
-F 3 "~" H 6030 4000 50  0001 C CNN
-	1    6030 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5F3BDABC
-P 5880 4000
-AR Path="/5F3BDABC" Ref="R5"  Part="1" 
-AR Path="/5D6224DC/5F3BDABC" Ref="R?"  Part="1" 
-F 0 "R5" V 5805 3925 50  0000 L CNN
-F 1 "10K" V 5880 3950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5880 4000 50  0001 C CNN
-F 3 "~" H 5880 4000 50  0001 C CNN
-	1    5880 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5F3BDAC2
-P 5730 4000
-AR Path="/5F3BDAC2" Ref="R4"  Part="1" 
-AR Path="/5D6224DC/5F3BDAC2" Ref="R?"  Part="1" 
-F 0 "R4" V 5655 3925 50  0000 L CNN
-F 1 "10K" V 5730 3950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5730 4000 50  0001 C CNN
-F 3 "~" H 5730 4000 50  0001 C CNN
-	1    5730 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5F3BDAC8
-P 5580 4000
-AR Path="/5F3BDAC8" Ref="R3"  Part="1" 
-AR Path="/5D6224DC/5F3BDAC8" Ref="R?"  Part="1" 
-F 0 "R3" V 5505 3925 50  0000 L CNN
-F 1 "10K" V 5580 3950 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5580 4000 50  0001 C CNN
-F 3 "~" H 5580 4000 50  0001 C CNN
-	1    5580 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5580 3900 5580 3800
-Wire Wire Line
-	5580 3800 5730 3800
-Wire Wire Line
-	6030 3800 6030 3900
-Wire Wire Line
-	5880 3900 5880 3800
-Connection ~ 5880 3800
-Wire Wire Line
-	5880 3800 6030 3800
-Wire Wire Line
-	5730 3900 5730 3800
-Connection ~ 5730 3800
-Wire Wire Line
-	6030 4100 6030 4450
-Text Label 6030 4150 3    50   ~ 0
-~BUSRQ
-Text Label 5880 4200 3    50   ~ 0
-~WAIT
-Text Label 5730 4200 3    50   ~ 0
-~NMI
-Text Label 5580 4300 1    50   ~ 0
-~INT
-Wire Wire Line
-	5880 4100 5880 4450
-Wire Wire Line
-	5730 4100 5730 4450
-Wire Wire Line
-	5580 4100 5580 4450
-Text Label 6350 5600 0    50   ~ 0
-~RESET
-Wire Wire Line
-	5600 6000 6200 6000
-Wire Wire Line
-	6000 5600 6200 5600
-Connection ~ 6200 5600
-Connection ~ 5600 6000
-$Comp
-L THS-80:DS1813R-5+T&R U2
-U 1 1 5F3E91F7
-P 5700 5600
-AR Path="/5F3E91F7" Ref="U2"  Part="1" 
-AR Path="/5D6224DC/5F3E91F7" Ref="U?"  Part="1" 
-F 0 "U2" H 5470 5646 50  0000 R CNN
-F 1 "DS1813R-5+T&R" H 6350 5950 50  0000 R CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5300 5750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/256/maxim%20integrated%20products_ds1813-1178753.pdf" H 5400 5850 50  0001 C CNN
-	1    5700 5600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_Push SW1
-U 1 1 5F3E91FD
-P 6200 5800
-AR Path="/5F3E91FD" Ref="SW1"  Part="1" 
-AR Path="/5D6224DC/5F3E91FD" Ref="SW?"  Part="1" 
-F 0 "SW1" V 6154 5948 50  0000 L CNN
-F 1 "Reset" V 6245 5948 50  0000 L CNN
-F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 6200 6000 50  0001 C CNN
-F 3 "~" H 6200 6000 50  0001 C CNN
-	1    6200 5800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6200 5600 6650 5600
-$Comp
-L power:GND #PWR014
-U 1 1 5F3E920A
-P 5600 6100
-AR Path="/5F3E920A" Ref="#PWR014"  Part="1" 
-AR Path="/5CB63856/5F3E920A" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F3E920A" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5F3E920A" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5F3E920A" Ref="#PWR?"  Part="1" 
-AR Path="/5D6224DC/5F3E920A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR014" H 5600 5850 50  0001 C CNN
-F 1 "GND" H 5604 5958 50  0000 C CNN
-F 2 "" H 5600 6100 50  0001 C CNN
-F 3 "" H 5600 6100 50  0001 C CNN
-	1    5600 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5600 6000 5600 6100
 Text Label 10025 1950 2    50   ~ 0
 ~INT
 Text Label 10000 2050 2    50   ~ 0
@@ -1462,13 +1325,6 @@ Wire Wire Line
 	1350 1650 1350 2250
 Wire Wire Line
 	1350 2250 1050 2250
-Wire Wire Line
-	5730 3800 5800 3800
-Wire Wire Line
-	5800 3700 5800 3800
-Connection ~ 5800 3800
-Wire Wire Line
-	5800 3800 5880 3800
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 5F1E8C18
@@ -1519,28 +1375,6 @@ F 3 "" H 750 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VCC #PWR0104
-U 1 1 5DBFDEF7
-P 5600 5200
-F 0 "#PWR0104" H 5600 5050 50  0001 C CNN
-F 1 "VCC" H 5617 5373 50  0000 C CNN
-F 2 "" H 5600 5200 50  0001 C CNN
-F 3 "" H 5600 5200 50  0001 C CNN
-	1    5600 5200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0105
-U 1 1 5DC183D7
-P 5800 3700
-F 0 "#PWR0105" H 5800 3550 50  0001 C CNN
-F 1 "VCC" H 5817 3873 50  0000 C CNN
-F 2 "" H 5800 3700 50  0001 C CNN
-F 3 "" H 5800 3700 50  0001 C CNN
-	1    5800 3700
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0136
 U 1 1 5DFA88CB
 P 2600 1950
@@ -1549,6 +1383,172 @@ F 1 "VCC" H 2617 2123 50  0000 C CNN
 F 2 "" H 2600 1950 50  0001 C CNN
 F 3 "" H 2600 1950 50  0001 C CNN
 	1    2600 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R6
+U 1 1 5E47A0BC
+P 6280 3550
+AR Path="/5E47A0BC" Ref="R6"  Part="1" 
+AR Path="/5D6224DC/5E47A0BC" Ref="R?"  Part="1" 
+F 0 "R6" V 6205 3475 50  0000 L CNN
+F 1 "10K" V 6280 3500 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6280 3550 50  0001 C CNN
+F 3 "~" H 6280 3550 50  0001 C CNN
+	1    6280 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R5
+U 1 1 5E47A0C2
+P 6130 3550
+AR Path="/5E47A0C2" Ref="R5"  Part="1" 
+AR Path="/5D6224DC/5E47A0C2" Ref="R?"  Part="1" 
+F 0 "R5" V 6055 3475 50  0000 L CNN
+F 1 "10K" V 6130 3500 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6130 3550 50  0001 C CNN
+F 3 "~" H 6130 3550 50  0001 C CNN
+	1    6130 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5E47A0C8
+P 5980 3550
+AR Path="/5E47A0C8" Ref="R4"  Part="1" 
+AR Path="/5D6224DC/5E47A0C8" Ref="R?"  Part="1" 
+F 0 "R4" V 5905 3475 50  0000 L CNN
+F 1 "10K" V 5980 3500 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5980 3550 50  0001 C CNN
+F 3 "~" H 5980 3550 50  0001 C CNN
+	1    5980 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R3
+U 1 1 5E47A0CE
+P 5830 3550
+AR Path="/5E47A0CE" Ref="R3"  Part="1" 
+AR Path="/5D6224DC/5E47A0CE" Ref="R?"  Part="1" 
+F 0 "R3" V 5755 3475 50  0000 L CNN
+F 1 "10K" V 5830 3500 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5830 3550 50  0001 C CNN
+F 3 "~" H 5830 3550 50  0001 C CNN
+	1    5830 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5830 3450 5830 3350
+Wire Wire Line
+	5830 3350 5980 3350
+Wire Wire Line
+	6280 3350 6280 3450
+Wire Wire Line
+	6130 3450 6130 3350
+Connection ~ 6130 3350
+Wire Wire Line
+	6130 3350 6280 3350
+Wire Wire Line
+	5980 3450 5980 3350
+Connection ~ 5980 3350
+Wire Wire Line
+	6280 3650 6280 4000
+Text Label 6280 3700 3    50   ~ 0
+~BUSRQ
+Text Label 6130 3750 3    50   ~ 0
+~WAIT
+Text Label 5980 3750 3    50   ~ 0
+~NMI
+Text Label 5830 3850 1    50   ~ 0
+~INT
+Wire Wire Line
+	6130 3650 6130 4000
+Wire Wire Line
+	5980 3650 5980 4000
+Wire Wire Line
+	5830 3650 5830 4000
+Text Label 6600 5150 0    50   ~ 0
+~RESET
+Wire Wire Line
+	5850 5550 6450 5550
+Wire Wire Line
+	6250 5150 6450 5150
+Connection ~ 6450 5150
+Connection ~ 5850 5550
+$Comp
+L THS-80:DS1813R-5+T&R U2
+U 1 1 5E47A0E9
+P 5950 5150
+AR Path="/5E47A0E9" Ref="U2"  Part="1" 
+AR Path="/5D6224DC/5E47A0E9" Ref="U?"  Part="1" 
+F 0 "U2" H 5720 5196 50  0000 R CNN
+F 1 "DS1813R-5+T&R" H 6600 5500 50  0000 R CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5550 5300 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/256/maxim%20integrated%20products_ds1813-1178753.pdf" H 5650 5400 50  0001 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5E47A0EF
+P 6450 5350
+AR Path="/5E47A0EF" Ref="SW1"  Part="1" 
+AR Path="/5D6224DC/5E47A0EF" Ref="SW?"  Part="1" 
+F 0 "SW1" V 6404 5498 50  0000 L CNN
+F 1 "Reset" V 6495 5498 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_FSMSM" H 6450 5550 50  0001 C CNN
+F 3 "~" H 6450 5550 50  0001 C CNN
+	1    6450 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6450 5150 6900 5150
+$Comp
+L power:GND #PWR0104
+U 1 1 5E47A0F6
+P 5850 5650
+AR Path="/5E47A0F6" Ref="#PWR0104"  Part="1" 
+AR Path="/5CB63856/5E47A0F6" Ref="#PWR?"  Part="1" 
+AR Path="/5CB5AB00/5CB63856/5E47A0F6" Ref="#PWR?"  Part="1" 
+AR Path="/5CFABACD/5E47A0F6" Ref="#PWR?"  Part="1" 
+AR Path="/5CF9C1ED/5E47A0F6" Ref="#PWR?"  Part="1" 
+AR Path="/5D6224DC/5E47A0F6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR0104" H 5850 5400 50  0001 C CNN
+F 1 "GND" H 5854 5508 50  0000 C CNN
+F 2 "" H 5850 5650 50  0001 C CNN
+F 3 "" H 5850 5650 50  0001 C CNN
+	1    5850 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 5550 5850 5650
+Wire Wire Line
+	5980 3350 6050 3350
+Wire Wire Line
+	6050 3250 6050 3350
+Connection ~ 6050 3350
+Wire Wire Line
+	6050 3350 6130 3350
+$Comp
+L power:VCC #PWR0105
+U 1 1 5E47A101
+P 5850 4750
+F 0 "#PWR0105" H 5850 4600 50  0001 C CNN
+F 1 "VCC" H 5867 4923 50  0000 C CNN
+F 2 "" H 5850 4750 50  0001 C CNN
+F 3 "" H 5850 4750 50  0001 C CNN
+	1    5850 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0137
+U 1 1 5E47A107
+P 6050 3250
+F 0 "#PWR0137" H 6050 3100 50  0001 C CNN
+F 1 "VCC" H 6067 3423 50  0000 C CNN
+F 2 "" H 6050 3250 50  0001 C CNN
+F 3 "" H 6050 3250 50  0001 C CNN
+	1    6050 3250
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
