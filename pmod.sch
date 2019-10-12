@@ -244,8 +244,8 @@ U 1 1 5DC93BC1
 P 4075 4000
 AR Path="/5D70CA34/5DC93BC1" Ref="D?"  Part="1" 
 AR Path="/5D70CA34/5DC790D1/5DC93BC1" Ref="D15"  Part="1" 
-F 0 "D15" H 4375 4025 50  0000 L CNN
-F 1 "SP0504BAHT" H 4375 3925 50  0000 L CNN
+F 0 "D15" H 4400 4050 50  0000 L CNN
+F 1 "SP0504BAHT" H 4400 3950 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4375 3950 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 4200 4125 50  0001 C CNN
 	1    4075 4000
@@ -257,8 +257,8 @@ U 1 1 5DC93BC7
 P 2025 4000
 AR Path="/5D70CA34/5DC93BC7" Ref="D?"  Part="1" 
 AR Path="/5D70CA34/5DC790D1/5DC93BC7" Ref="D14"  Part="1" 
-F 0 "D14" H 1575 4050 50  0000 L CNN
-F 1 "SP0504BAHT" H 1375 3950 50  0000 L CNN
+F 0 "D14" H 1350 4050 50  0000 L CNN
+F 1 "SP0504BAHT" H 1350 3950 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2325 3950 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2150 4125 50  0001 C CNN
 	1    2025 4000
