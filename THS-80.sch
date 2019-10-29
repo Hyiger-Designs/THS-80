@@ -1320,9 +1320,7 @@ Wire Wire Line
 	700  2250 950  2250
 Connection ~ 950  2250
 Wire Wire Line
-	1050 1850 1050 2250
-Wire Wire Line
-	1350 1650 1350 2250
+	1350 1650 1350 1850
 Wire Wire Line
 	1350 2250 1050 2250
 $Comp
@@ -1551,4 +1549,9 @@ F 3 "" H 6050 3250 50  0001 C CNN
 	1    6050 3250
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1050 1850 1350 1850
+Connection ~ 1350 1850
+Wire Wire Line
+	1350 1850 1350 2250
 $EndSCHEMATC
