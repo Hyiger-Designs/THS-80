@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:THS-80-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -498,11 +497,6 @@ Text Label 4650 2000 2    50   ~ 0
 RAM_~CE
 Text HLabel 10850 1200 2    50   3State ~ 0
 D[0..7]
-Text HLabel 7950 2800 0    50   Input ~ 0
-~WR
-Connection ~ 8100 2800
-Wire Wire Line
-	8100 2800 7950 2800
 Text Label 8650 3000 0    50   ~ 0
 ROM_~CE
 Text HLabel 8600 3100 0    50   Input ~ 0
@@ -781,51 +775,8 @@ F 3 "~" H 7950 4300 50  0001 C CNN
 	1    7950 4300
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR026
-U 1 1 5DA13CEA
-P 9850 5650
-F 0 "#PWR026" H 9850 5400 50  0001 C CNN
-F 1 "GND" H 9855 5477 50  0000 C CNN
-F 2 "" H 9850 5650 50  0001 C CNN
-F 3 "" H 9850 5650 50  0001 C CNN
-	1    9850 5650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D4
-U 1 1 5DA13CF0
-P 9850 5300
-F 0 "D4" V 9889 5183 50  0000 R CNN
-F 1 "RED" V 9798 5183 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9850 5300 50  0001 C CNN
-F 3 "~" H 9850 5300 50  0001 C CNN
-	1    9850 5300
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R12
-U 1 1 5DA13CF6
-P 9850 5550
-F 0 "R12" H 9909 5596 50  0000 L CNN
-F 1 "360R" H 9909 5505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9850 5550 50  0001 C CNN
-F 3 "~" H 9850 5550 50  0001 C CNN
-	1    9850 5550
-	-1   0    0    1   
-$EndComp
 Text Notes 8050 4350 0    50   ~ 0
 RAM Enabled
-Text Notes 10000 5600 0    50   ~ 0
-ROM Write Enabled
-Wire Wire Line
-	9300 5100 8700 5100
-Text Label 8800 5100 0    50   ~ 0
-ROM_~CE
-Text Label 8800 5200 0    50   ~ 0
-~WR
-Wire Wire Line
-	9300 5200 8700 5200
 Wire Wire Line
 	7400 3900 6750 3900
 Wire Wire Line
@@ -993,17 +944,6 @@ F 1 "74AHCT2G04" H 9575 4076 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 9600 3900 50  0001 C CNN
 F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9600 3900 50  0001 C CNN
 	2    9600 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74AHCT1G02 U5
-U 1 1 5DC6BE1B
-P 9600 5150
-F 0 "U5" H 9575 5417 50  0000 C CNN
-F 1 "74AHCT1G02" H 9575 5326 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering" H 9600 5150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9600 5150 50  0001 C CNN
-	1    9600 5150
 	1    0    0    -1  
 $EndComp
 Wire Bus Line
