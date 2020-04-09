@@ -502,8 +502,6 @@ ROM_~CE
 Text HLabel 8600 3100 0    50   Input ~ 0
 ~RD
 Wire Wire Line
-	8100 2800 9000 2800
-Wire Wire Line
 	8450 2500 9000 2500
 Text Label 8700 2400 0    50   ~ 0
 A16
@@ -651,7 +649,7 @@ Wire Wire Line
 	10200 900  10750 900 
 Wire Wire Line
 	10200 800  10750 800 
-Text HLabel 7450 3000 0    50   Input ~ 0
+Text HLabel 7000 3000 0    50   Input ~ 0
 ROM_~CE~
 Text Notes 9475 1825 0    50   ~ 0
 Flash/ROM
@@ -668,23 +666,10 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/25022B.pdf" H 9600 2300 50 
 $EndComp
 Wire Wire Line
 	9000 3100 8600 3100
-$Comp
-L Device:R_Small R8
-U 1 1 5D6532C1
-P 8100 2700
-F 0 "R8" H 8159 2746 50  0000 L CNN
-F 1 "10K" H 8159 2655 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 8100 2700 50  0001 C CNN
-F 3 "~" H 8100 2700 50  0001 C CNN
-	1    8100 2700
-	1    0    0    -1  
-$EndComp
 Connection ~ 5700 2000
 Wire Wire Line
 	5700 2000 5800 2000
 Connection ~ 7550 3000
-Wire Wire Line
-	7550 3000 7450 3000
 $Comp
 L Device:C_Small C8
 U 1 1 5F181CA3
@@ -740,45 +725,6 @@ Wire Wire Line
 Connection ~ 6850 5850
 Wire Wire Line
 	6850 5850 7250 5850
-$Comp
-L power:GND #PWR025
-U 1 1 5DA13CCB
-P 7950 4400
-F 0 "#PWR025" H 7950 4150 50  0001 C CNN
-F 1 "GND" H 7955 4227 50  0000 C CNN
-F 2 "" H 7950 4400 50  0001 C CNN
-F 3 "" H 7950 4400 50  0001 C CNN
-	1    7950 4400
-	1    0    0    -1  
-$EndComp
-Text Label 6850 3900 0    50   ~ 0
-RAM_~CE
-$Comp
-L Device:LED D3
-U 1 1 5DA13CDE
-P 7950 4050
-F 0 "D3" V 7989 3933 50  0000 R CNN
-F 1 "GRN" V 7898 3933 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7950 4050 50  0001 C CNN
-F 3 "~" H 7950 4050 50  0001 C CNN
-	1    7950 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R11
-U 1 1 5DA13CE4
-P 7950 4300
-F 0 "R11" H 8009 4346 50  0000 L CNN
-F 1 "1K" H 8009 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7950 4300 50  0001 C CNN
-F 3 "~" H 7950 4300 50  0001 C CNN
-	1    7950 4300
-	-1   0    0    1   
-$EndComp
-Text Notes 8050 4350 0    50   ~ 0
-RAM Enabled
-Wire Wire Line
-	7400 3900 6750 3900
 Wire Wire Line
 	7550 3000 9000 3000
 Wire Wire Line
@@ -799,14 +745,14 @@ $EndComp
 $Comp
 L power:VCC #PWR?
 U 1 1 5DCA243D
-P 8100 2600
+P 7550 1950
 AR Path="/5DCA243D" Ref="#PWR?"  Part="1" 
 AR Path="/5D6224DC/5DCA243D" Ref="#PWR0107"  Part="1" 
-F 0 "#PWR0107" H 8100 2450 50  0001 C CNN
-F 1 "VCC" H 8117 2773 50  0000 C CNN
-F 2 "" H 8100 2600 50  0001 C CNN
-F 3 "" H 8100 2600 50  0001 C CNN
-	1    8100 2600
+F 0 "#PWR0107" H 7550 1800 50  0001 C CNN
+F 1 "VCC" H 7567 2123 50  0000 C CNN
+F 2 "" H 7550 1950 50  0001 C CNN
+F 3 "" H 7550 1950 50  0001 C CNN
+	1    7550 1950
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -886,66 +832,30 @@ F 3 "https://www.alliancememory.com/wp-content/uploads/pdf/AS6C4008.pdf" H 3750 
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
-U 1 1 5DBEF08F
-P 9850 4400
-F 0 "#PWR01" H 9850 4150 50  0001 C CNN
-F 1 "GND" H 9855 4227 50  0000 C CNN
-F 2 "" H 9850 4400 50  0001 C CNN
-F 3 "" H 9850 4400 50  0001 C CNN
-	1    9850 4400
-	1    0    0    -1  
+L Jumper:Jumper_3_Bridged12 JP?
+U 1 1 5EA41998
+P 7550 2300
+AR Path="/5EA41998" Ref="JP?"  Part="1" 
+AR Path="/5D6224DC/5EA41998" Ref="JP5"  Part="1" 
+F 0 "JP5" V 7550 2504 50  0000 C CNN
+F 1 "WR Ena" V 7650 2500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7550 2300 50  0001 C CNN
+F 3 "~" H 7550 2300 50  0001 C CNN
+	1    7550 2300
+	0    -1   1    0   
 $EndComp
-Text Label 8750 3900 0    50   ~ 0
-ROM_~CE
-$Comp
-L Device:LED D2
-U 1 1 5DBEF096
-P 9850 4050
-F 0 "D2" V 9889 3933 50  0000 R CNN
-F 1 "GRN" V 9798 3933 50  0000 R CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9850 4050 50  0001 C CNN
-F 3 "~" H 9850 4050 50  0001 C CNN
-	1    9850 4050
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R10
-U 1 1 5DBEF09C
-P 9850 4300
-F 0 "R10" H 9909 4346 50  0000 L CNN
-F 1 "1K" H 9909 4255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9850 4300 50  0001 C CNN
-F 3 "~" H 9850 4300 50  0001 C CNN
-	1    9850 4300
-	-1   0    0    1   
-$EndComp
-Text Notes 9950 4350 0    50   ~ 0
-ROM Enabled
 Wire Wire Line
-	9300 3900 8650 3900
-$Comp
-L 74xGxx:74LVC2G04 U14
-U 1 1 5DBF5BBF
-P 7700 3900
-F 0 "U14" H 7675 4167 50  0000 C CNN
-F 1 "74AHCT2G04" H 7675 4076 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 7700 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 7700 3900 50  0001 C CNN
-	1    7700 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xGxx:74LVC2G04 U14
-U 2 1 5DBF69CE
-P 9600 3900
-F 0 "U14" H 9575 4167 50  0000 C CNN
-F 1 "74AHCT2G04" H 9575 4076 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6_Handsoldering" H 9600 3900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 9600 3900 50  0001 C CNN
-	2    9600 3900
-	1    0    0    -1  
-$EndComp
+	7550 2550 7000 2550
+Text HLabel 7000 2550 0    50   Input ~ 0
+~WR
+Wire Wire Line
+	7550 1950 7550 2050
+Wire Wire Line
+	9000 2800 7700 2800
+Wire Wire Line
+	7700 2800 7700 2300
+Wire Wire Line
+	7000 3000 7550 3000
 Wire Bus Line
 	10850 850  10850 1650
 Wire Bus Line
