@@ -13,8 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	1925 3800 1925 3400
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5DC93B46
@@ -87,32 +85,6 @@ F 1 "10nF" H 3542 2055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3450 2100 50  0001 C CNN
 F 3 "~" H 3450 2100 50  0001 C CNN
 	1    3450 2100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC93B7A
-P 2025 4200
-AR Path="/5D70CA34/5DC93B7A" Ref="#PWR?"  Part="1" 
-AR Path="/5D70CA34/5DC790D1/5DC93B7A" Ref="#PWR060"  Part="1" 
-F 0 "#PWR060" H 2025 3950 50  0001 C CNN
-F 1 "GND" H 2030 4027 50  0000 C CNN
-F 2 "" H 2025 4200 50  0001 C CNN
-F 3 "" H 2025 4200 50  0001 C CNN
-	1    2025 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DC93B80
-P 4075 4200
-AR Path="/5D70CA34/5DC93B80" Ref="#PWR?"  Part="1" 
-AR Path="/5D70CA34/5DC790D1/5DC93B80" Ref="#PWR063"  Part="1" 
-F 0 "#PWR063" H 4075 3950 50  0001 C CNN
-F 1 "GND" H 4080 4027 50  0000 C CNN
-F 2 "" H 4075 4200 50  0001 C CNN
-F 3 "" H 4075 4200 50  0001 C CNN
-	1    4075 4200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -216,61 +188,7 @@ Wire Wire Line
 Wire Wire Line
 	2875 3800 2675 3800
 Wire Wire Line
-	4275 3800 4275 3400
-Wire Wire Line
-	4175 3800 4175 3500
-Wire Wire Line
-	4075 3800 4075 3600
-Wire Wire Line
-	3975 3800 3975 3700
-Wire Wire Line
-	2225 3700 2875 3700
-Wire Wire Line
-	2225 3800 2225 3700
-Wire Wire Line
-	2125 3600 2875 3600
-Wire Wire Line
-	2125 3800 2125 3600
-Wire Wire Line
-	2025 3500 2875 3500
-Wire Wire Line
-	2025 3800 2025 3500
-Wire Wire Line
-	1925 3400 2875 3400
-$Comp
-L Power_Protection:SP0504BAHT D?
-U 1 1 5DC93BC1
-P 4075 4000
-AR Path="/5D70CA34/5DC93BC1" Ref="D?"  Part="1" 
-AR Path="/5D70CA34/5DC790D1/5DC93BC1" Ref="D15"  Part="1" 
-F 0 "D15" H 4400 4050 50  0000 L CNN
-F 1 "SP0504BAHT" H 4400 3950 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4375 3950 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 4200 4125 50  0001 C CNN
-	1    4075 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Power_Protection:SP0504BAHT D?
-U 1 1 5DC93BC7
-P 2025 4000
-AR Path="/5D70CA34/5DC93BC7" Ref="D?"  Part="1" 
-AR Path="/5D70CA34/5DC790D1/5DC93BC7" Ref="D14"  Part="1" 
-F 0 "D14" H 1350 4050 50  0000 L CNN
-F 1 "SP0504BAHT" H 1350 3950 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2325 3950 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2150 4125 50  0001 C CNN
-	1    2025 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3375 3700 3975 3700
-Wire Wire Line
 	3375 3600 4075 3600
-Wire Wire Line
-	3375 3500 4175 3500
-Wire Wire Line
-	3375 3400 4275 3400
 Text Label 3575 3700 0    50   ~ 0
 P10
 Text Label 3575 3600 0    50   ~ 0
@@ -632,4 +550,18 @@ $EndComp
 Wire Wire Line
 	3850 1950 3850 1900
 Connection ~ 3850 1900
+Wire Wire Line
+	3375 3700 4075 3700
+Wire Wire Line
+	3375 3500 4075 3500
+Wire Wire Line
+	3375 3400 4075 3400
+Wire Wire Line
+	2175 3400 2875 3400
+Wire Wire Line
+	2175 3500 2875 3500
+Wire Wire Line
+	2175 3600 2875 3600
+Wire Wire Line
+	2175 3700 2875 3700
 $EndSCHEMATC

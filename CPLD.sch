@@ -636,22 +636,6 @@ Wire Wire Line
 	6750 4650 6150 4650
 $Comp
 L Device:R_Small R?
-U 1 1 5F2469FB
-P 5450 4500
-AR Path="/5D0F9837/5F2469FB" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5D0BF766/5F2469FB" Ref="R?"  Part="1" 
-AR Path="/5D1AF052/5F2469FB" Ref="R?"  Part="1" 
-AR Path="/5F2469FB" Ref="R?"  Part="1" 
-AR Path="/5D70CA34/5F2469FB" Ref="R14"  Part="1" 
-F 0 "R14" H 5250 4500 50  0000 L CNN
-F 1 "10K" V 5450 4435 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 4500 50  0001 C CNN
-F 3 "~" H 5450 4500 50  0001 C CNN
-	1    5450 4500
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
 U 1 1 5F27945A
 P 1300 5100
 AR Path="/5D0F9837/5F27945A" Ref="R?"  Part="1" 
@@ -1153,8 +1137,6 @@ Text HLabel 6150 2950 0    50   Output ~ 0
 IEO
 Wire Wire Line
 	1300 5200 1300 5250
-Wire Wire Line
-	5450 4600 5450 4750
 $Comp
 L Device:R_Small R?
 U 1 1 5DC12F68
@@ -1203,8 +1185,6 @@ TDO
 Connection ~ 4700 5700
 Wire Wire Line
 	4000 5400 4000 5900
-Wire Wire Line
-	5450 4750 6750 4750
 Wire Wire Line
 	3800 5600 4800 5600
 $Comp
@@ -1327,19 +1307,6 @@ F 3 "" H 4100 4900 50  0001 C CNN
 $EndComp
 $Comp
 L power:VCC #PWR?
-U 1 1 5DDB5286
-P 5450 4400
-AR Path="/5DDB5286" Ref="#PWR?"  Part="1" 
-AR Path="/5D70CA34/5DDB5286" Ref="#PWR0119"  Part="1" 
-F 0 "#PWR0119" H 5450 4250 50  0001 C CNN
-F 1 "VCC" H 5467 4573 50  0000 C CNN
-F 2 "" H 5450 4400 50  0001 C CNN
-F 3 "" H 5450 4400 50  0001 C CNN
-	1    5450 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
 U 1 1 5DDD0628
 P 2650 6800
 AR Path="/5DDD0628" Ref="#PWR?"  Part="1" 
@@ -1353,6 +1320,7 @@ F 3 "" H 2650 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3800 5700 4700 5700
+NoConn ~ 6750 4750
 Wire Bus Line
 	6050 2450 6050 2750
 Wire Bus Line
