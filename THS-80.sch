@@ -1382,88 +1382,22 @@ F 3 "" H 2600 1950 50  0001 C CNN
 	1    2600 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_Small R6
-U 1 1 5E47A0BC
-P 6280 3550
-AR Path="/5E47A0BC" Ref="R6"  Part="1" 
-AR Path="/5D6224DC/5E47A0BC" Ref="R?"  Part="1" 
-F 0 "R6" V 6205 3475 50  0000 L CNN
-F 1 "10K" V 6280 3500 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6280 3550 50  0001 C CNN
-F 3 "~" H 6280 3550 50  0001 C CNN
-	1    6280 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R5
-U 1 1 5E47A0C2
-P 6130 3550
-AR Path="/5E47A0C2" Ref="R5"  Part="1" 
-AR Path="/5D6224DC/5E47A0C2" Ref="R?"  Part="1" 
-F 0 "R5" V 6055 3475 50  0000 L CNN
-F 1 "10K" V 6130 3500 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6130 3550 50  0001 C CNN
-F 3 "~" H 6130 3550 50  0001 C CNN
-	1    6130 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R4
-U 1 1 5E47A0C8
-P 5980 3550
-AR Path="/5E47A0C8" Ref="R4"  Part="1" 
-AR Path="/5D6224DC/5E47A0C8" Ref="R?"  Part="1" 
-F 0 "R4" V 5905 3475 50  0000 L CNN
-F 1 "10K" V 5980 3500 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5980 3550 50  0001 C CNN
-F 3 "~" H 5980 3550 50  0001 C CNN
-	1    5980 3550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R3
-U 1 1 5E47A0CE
-P 5830 3550
-AR Path="/5E47A0CE" Ref="R3"  Part="1" 
-AR Path="/5D6224DC/5E47A0CE" Ref="R?"  Part="1" 
-F 0 "R3" V 5755 3475 50  0000 L CNN
-F 1 "10K" V 5830 3500 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5830 3550 50  0001 C CNN
-F 3 "~" H 5830 3550 50  0001 C CNN
-	1    5830 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	5830 3450 5830 3350
-Wire Wire Line
-	5830 3350 5980 3350
-Wire Wire Line
-	6280 3350 6280 3450
-Wire Wire Line
-	6130 3450 6130 3350
-Connection ~ 6130 3350
-Wire Wire Line
-	6130 3350 6280 3350
-Wire Wire Line
-	5980 3450 5980 3350
-Connection ~ 5980 3350
-Wire Wire Line
-	6280 3650 6280 4000
-Text Label 6280 3700 3    50   ~ 0
+	5100 3750 5100 4100
+Text Label 5100 3800 3    50   ~ 0
 ~BUSRQ
-Text Label 6130 3750 3    50   ~ 0
+Text Label 5000 3850 3    50   ~ 0
 ~WAIT
-Text Label 5980 3750 3    50   ~ 0
+Text Label 4900 3850 3    50   ~ 0
 ~NMI
-Text Label 5830 3850 1    50   ~ 0
+Text Label 5200 3950 1    50   ~ 0
 ~INT
 Wire Wire Line
-	6130 3650 6130 4000
+	5000 3750 5000 4100
 Wire Wire Line
-	5980 3650 5980 4000
+	4900 3750 4900 4100
 Wire Wire Line
-	5830 3650 5830 4000
+	5200 3750 5200 4100
 Text Label 5750 5200 0    50   ~ 0
 ~RST
 Wire Wire Line
@@ -1520,12 +1454,7 @@ $EndComp
 Wire Wire Line
 	5000 5600 5000 5700
 Wire Wire Line
-	5980 3350 6050 3350
-Wire Wire Line
-	6050 3250 6050 3350
-Connection ~ 6050 3350
-Wire Wire Line
-	6050 3350 6130 3350
+	5050 3250 5050 3350
 $Comp
 L power:VCC #PWR0105
 U 1 1 5E47A101
@@ -1540,12 +1469,12 @@ $EndComp
 $Comp
 L power:VCC #PWR0137
 U 1 1 5E47A107
-P 6050 3250
-F 0 "#PWR0137" H 6050 3100 50  0001 C CNN
-F 1 "VCC" H 6067 3423 50  0000 C CNN
-F 2 "" H 6050 3250 50  0001 C CNN
-F 3 "" H 6050 3250 50  0001 C CNN
-	1    6050 3250
+P 5050 3250
+F 0 "#PWR0137" H 5050 3100 50  0001 C CNN
+F 1 "VCC" H 5067 3423 50  0000 C CNN
+F 2 "" H 5050 3250 50  0001 C CNN
+F 3 "" H 5050 3250 50  0001 C CNN
+	1    5050 3250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1596,4 +1525,28 @@ F 3 "" H 7000 4900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7000 5100 7000 5200
+$Comp
+L Device:R_Pack04 RN?
+U 1 1 5E972F2D
+P 5000 3550
+AR Path="/5D70CA34/5E972F2D" Ref="RN?"  Part="1" 
+AR Path="/5E972F2D" Ref="RN4"  Part="1" 
+F 0 "RN4" H 4450 3650 50  0000 C CNN
+F 1 "10K" H 4450 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_Cat16-4" V 5475 3550 50  0001 C CNN
+F 3 "~" H 5000 3550 50  0001 C CNN
+	1    5000 3550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4900 3350 5000 3350
+Connection ~ 5000 3350
+Wire Wire Line
+	5000 3350 5050 3350
+Connection ~ 5100 3350
+Wire Wire Line
+	5100 3350 5200 3350
+Connection ~ 5050 3350
+Wire Wire Line
+	5050 3350 5100 3350
 $EndSCHEMATC
