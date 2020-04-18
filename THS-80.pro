@@ -1,4 +1,4 @@
-update=Monday, October 07, 2019 at 08:06:34 PM
+update=Friday, April 17, 2020 at 11:49:30 PM
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=
+LastNetListRead=THS-80.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -74,7 +74,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.0508
 SolderMaskMinWidth=0.1016
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
