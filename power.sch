@@ -13,559 +13,640 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	3000 1600 3000 1800
-Wire Wire Line
-	3950 1900 3950 2000
-Connection ~ 3000 1600
-NoConn ~ 1850 1900
-NoConn ~ 1850 1800
-$Comp
-L power:GND #PWR?
-U 1 1 5F82699B
-P 1550 2600
-AR Path="/5F82699B" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F82699B" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F82699B" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F82699B" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 1550 2350 50  0001 C CNN
-F 1 "GND" H 1555 2427 50  0000 C CNN
-F 2 "" H 1550 2600 50  0001 C CNN
-F 3 "" H 1550 2600 50  0001 C CNN
-	1    1550 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:USB_B_Micro J?
-U 1 1 5F8269A6
-P 1550 1800
-AR Path="/5F8269A6" Ref="J?"  Part="1" 
-AR Path="/5F7E53CF/5F8269A6" Ref="J10"  Part="1" 
-F 0 "J10" H 1607 2267 50  0000 C CNN
-F 1 "USB_B_Micro" H 1607 2176 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1700 1750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/18/10103594-1361315.pdf" H 1700 1750 50  0001 C CNN
-F 4 "Amphenol" H -7400 -3800 50  0001 C CNN "MFR"
-F 5 "10103594-0001LF" H -7400 -3800 50  0001 C CNN "MPN"
-F 6 "Mouser" H -7400 -3800 50  0001 C CNN "SPR"
-F 7 "649-10103594-0001LF" H -7400 -3800 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/Amphenol-FCI/10103594-0001LF?qs=%2Fha2pyFadui3tF6%252BEBESQPkzCvC45QB71td3CV1bdDjkgdfJGIcfa4Qftb3SNhsX" H -7400 -3800 50  0001 C CNN "SPURL"
-	1    1550 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F8269B1
-P 3950 1800
-AR Path="/5F8269B1" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8269B1" Ref="C34"  Part="1" 
-F 0 "C34" H 3950 1875 50  0000 L CNN
-F 1 "2.2uF" H 3950 1725 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3988 1650 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3950 1800 50  0001 C CNN
-F 4 "KEMET" H -2700 -4900 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -2700 -4900 50  0001 C CNN "MPN"
-F 6 "Mouser" H -2700 -4900 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -2700 -4900 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -2700 -4900 50  0001 C CNN "SPURL"
-	1    3950 1800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Analog_Switch:MAX40200AUK U?
-U 1 1 5F8269BD
-P 3400 1700
-AR Path="/5F8269BD" Ref="U?"  Part="1" 
-AR Path="/5F7E53CF/5F8269BD" Ref="U12"  Part="1" 
-F 0 "U12" H 3400 2067 50  0000 C CNN
-F 1 "MAX40203AUK" H 3400 1976 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3400 2200 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX40203.pdf" H 3400 2200 50  0001 C CNN
-F 4 "Maxim Integrated" H -250 -4400 50  0001 C CNN "MFR"
-F 5 "MAX40203AUK+T" H -250 -4400 50  0001 C CNN "MPN"
-F 6 "700-MAX40203AUK+T" H -250 -4400 50  0001 C CNN "Mouser PN"
-F 7 "700-MAX40200AUK+T" H -250 -4400 50  0001 C CNN "SPN"
-F 8 "Mouser" H -250 -4400 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/Maxim-Integrated/MAX40200AUK%2bT?qs=%2Fha2pyFadujABnCd8FHptN3rEsbd5utT%2FzHUaZs42SQ3v1htVXk3Hw%3D%3D" H -250 -4400 50  0001 C CNN "SPURL"
-	1    3400 1700
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5F8269C3
-P 1200 2400
-AR Path="/5F8269C3" Ref="R?"  Part="1" 
-AR Path="/5F7E53CF/5F8269C3" Ref="R19"  Part="1" 
-F 0 "R19" H 1250 2400 50  0000 L CNN
-F 1 "1M" V 1200 2375 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1200 2400 50  0001 C CNN
-F 3 "~" H 1200 2400 50  0001 C CNN
-	1    1200 2400
-	1    0    0    -1  
-$EndComp
-Connection ~ 1450 2200
-Wire Wire Line
-	1200 2200 1200 2300
-Wire Wire Line
-	1450 2600 1550 2600
-Wire Wire Line
-	1200 2500 1200 2600
-Connection ~ 1550 2600
-$Comp
-L Device:C_Small C?
-U 1 1 5F8269D3
-P 2450 1900
-AR Path="/5F8269D3" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8269D3" Ref="C30"  Part="1" 
-F 0 "C30" H 2500 1950 50  0000 L CNN
-F 1 "2.2uF" H 2450 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2488 1750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2450 1900 50  0001 C CNN
-F 4 "KEMET" H -4200 -4800 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -4200 -4800 50  0001 C CNN "MPN"
-F 6 "Mouser" H -4200 -4800 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -4200 -4800 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -4200 -4800 50  0001 C CNN "SPURL"
-	1    2450 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F8269DE
-P 1450 2400
-AR Path="/5F8269DE" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8269DE" Ref="C27"  Part="1" 
-F 0 "C27" H 1550 2500 50  0000 L CNN
-F 1 "100nF" H 1550 2400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 1488 2250 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 1450 2400 50  0001 C CNN
-F 4 "KEMET" H -5200 -4300 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -5200 -4300 50  0001 C CNN "MPN"
-F 6 "Mouser" H -5200 -4300 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -5200 -4300 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -5200 -4300 50  0001 C CNN "SPURL"
-	1    1450 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1450 2200 1450 2300
-Wire Wire Line
-	1450 2500 1450 2600
-Wire Wire Line
-	3950 1700 3950 1600
-Wire Wire Line
-	3950 2000 3950 2150
-$Comp
-L power:GND #PWR?
-U 1 1 5F8269E8
-P 3950 2150
-AR Path="/5F8269E8" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F8269E8" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F8269E8" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F8269E8" Ref="#PWR087"  Part="1" 
-F 0 "#PWR087" H 3950 1900 50  0001 C CNN
-F 1 "GND" H 3955 1977 50  0000 C CNN
-F 2 "" H 3950 2150 50  0001 C CNN
-F 3 "" H 3950 2150 50  0001 C CNN
-	1    3950 2150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 2000 3950 2000
-Wire Wire Line
-	3800 1600 3950 1600
-Connection ~ 3950 1600
-Connection ~ 3950 2000
-$Comp
-L Device:C_Small C?
-U 1 1 5F8269F2
-P 2050 1900
-AR Path="/5F8269F2" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8269F2" Ref="C28"  Part="1" 
-F 0 "C28" H 2142 1946 50  0000 L CNN
-F 1 "100uF" H 2142 1855 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2050 1900 50  0001 C CNN
-F 3 "~" H 2050 1900 50  0001 C CNN
-	1    2050 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F8269FD
-P 2700 1900
-AR Path="/5F8269FD" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8269FD" Ref="C32"  Part="1" 
-F 0 "C32" H 2800 1950 50  0000 L CNN
-F 1 "100nF" H 2750 1850 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2738 1750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2700 1900 50  0001 C CNN
-F 4 "KEMET" H -3950 -4800 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -3950 -4800 50  0001 C CNN "MPN"
-F 6 "Mouser" H -3950 -4800 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -3950 -4800 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -3950 -4800 50  0001 C CNN "SPURL"
-	1    2700 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F826A03
-P 2450 2050
-AR Path="/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5D6224DC/5F826A03" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F826A03" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 2450 1800 50  0001 C CNN
-F 1 "GND" H 2454 1908 50  0000 C CNN
-F 2 "" H 2450 2050 50  0001 C CNN
-F 3 "" H 2450 2050 50  0001 C CNN
-	1    2450 2050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 2050 2450 2000
-Wire Wire Line
-	2700 1800 2450 1800
-Connection ~ 2450 1800
-Wire Wire Line
-	2700 2000 2450 2000
-Connection ~ 2450 2000
-Wire Wire Line
-	2050 2000 2450 2000
-Wire Wire Line
-	2050 1800 2450 1800
-Wire Wire Line
-	1850 1600 2450 1600
-Wire Wire Line
-	2450 1600 2450 1800
-Connection ~ 2450 1600
-Wire Wire Line
-	2450 1600 3000 1600
-$Comp
-L THS-80-rescue:LED-Device-max_breakout-rescue-sbc_z80-rescue D?
-U 1 1 5F826A18
-P 6200 1650
-AR Path="/5F826A18" Ref="D?"  Part="1" 
-AR Path="/5D70CA34/5F826A18" Ref="D?"  Part="1" 
-AR Path="/5F7E53CF/5F826A18" Ref="D11"  Part="1" 
-F 0 "D11" H 6225 1525 50  0000 C CNN
-F 1 "Blue" H 6200 1750 32  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6200 1650 50  0001 C CNN
-F 3 "~" H 6200 1650 50  0001 C CNN
-	1    6200 1650
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 5F826A1E
-P 6350 1750
-AR Path="/5D0F9837/5F826A1E" Ref="R?"  Part="1" 
-AR Path="/5CFABACD/5D0BF766/5F826A1E" Ref="R?"  Part="1" 
-AR Path="/5D1AF052/5F826A1E" Ref="R?"  Part="1" 
-AR Path="/5F826A1E" Ref="R?"  Part="1" 
-AR Path="/5D70CA34/5F826A1E" Ref="R?"  Part="1" 
-AR Path="/5F7E53CF/5F826A1E" Ref="R20"  Part="1" 
-F 0 "R20" H 6150 1750 50  0000 L CNN
-F 1 "360R" V 6350 1685 32  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6350 1750 50  0001 C CNN
-F 3 "~" H 6350 1750 50  0001 C CNN
-	1    6350 1750
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	6350 1900 6350 1850
-$Comp
-L power:GND #PWR?
-U 1 1 5F826A25
-P 6350 1900
-AR Path="/5D70CA34/5F826A25" Ref="#PWR?"  Part="1" 
-AR Path="/5F826A25" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F826A25" Ref="#PWR092"  Part="1" 
-F 0 "#PWR092" H 6350 1650 50  0001 C CNN
-F 1 "GND" H 6355 1727 50  0000 C CNN
-F 2 "" H 6350 1900 50  0001 C CNN
-F 3 "" H 6350 1900 50  0001 C CNN
-	1    6350 1900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5950 1650 6050 1650
-Wire Wire Line
-	1200 2200 1450 2200
-Wire Wire Line
-	1200 2600 1450 2600
-Connection ~ 1450 2600
-Wire Wire Line
-	1850 2000 1850 2200
-Wire Wire Line
-	1850 2600 1550 2600
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F826A31
-P 4300 1600
-AR Path="/5F826A31" Ref="#FLG?"  Part="1" 
-AR Path="/5F7E53CF/5F826A31" Ref="#FLG02"  Part="1" 
-F 0 "#FLG02" H 4300 1675 50  0001 C CNN
-F 1 "PWR_FLAG" H 4300 1773 50  0000 C CNN
-F 2 "" H 4300 1600 50  0001 C CNN
-F 3 "~" H 4300 1600 50  0001 C CNN
-	1    4300 1600
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5F826A37
-P 4300 1600
-AR Path="/5F826A37" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F826A37" Ref="#PWR089"  Part="1" 
-F 0 "#PWR089" H 4300 1450 50  0001 C CNN
-F 1 "VCC" H 4317 1773 50  0000 C CNN
-F 2 "" H 4300 1600 50  0001 C CNN
-F 3 "" H 4300 1600 50  0001 C CNN
-	1    4300 1600
-	1    0    0    -1  
-$EndComp
-Connection ~ 4300 1600
-Wire Wire Line
-	3950 1600 4300 1600
-Text Label 4150 1600 2    50   ~ 0
-5V
-$Comp
-L power:VCC #PWR?
-U 1 1 5F826A40
-P 5950 1650
-AR Path="/5F826A40" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F826A40" Ref="#PWR091"  Part="1" 
-F 0 "#PWR091" H 5950 1500 50  0001 C CNN
-F 1 "VCC" H 5967 1823 50  0000 C CNN
-F 2 "" H 5950 1650 50  0001 C CNN
-F 3 "" H 5950 1650 50  0001 C CNN
-	1    5950 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1550 2200 1850 2200
-Connection ~ 1850 2200
-Wire Wire Line
-	1850 2200 1850 2600
-Wire Wire Line
-	3000 3700 3000 3900
-Wire Wire Line
-	3950 4000 3950 4100
-Connection ~ 3000 3700
-$Comp
-L Device:C_Small C?
-U 1 1 5F84975C
-P 3950 3900
-AR Path="/5F84975C" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F84975C" Ref="C35"  Part="1" 
-F 0 "C35" H 3950 3975 50  0000 L CNN
-F 1 "2.2uF" H 3950 3825 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3988 3750 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 3950 3900 50  0001 C CNN
-F 4 "KEMET" H -2700 -2800 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -2700 -2800 50  0001 C CNN "MPN"
-F 6 "Mouser" H -2700 -2800 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -2700 -2800 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -2700 -2800 50  0001 C CNN "SPURL"
-	1    3950 3900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Analog_Switch:MAX40200AUK U?
-U 1 1 5F849768
-P 3400 3800
-AR Path="/5F849768" Ref="U?"  Part="1" 
-AR Path="/5F7E53CF/5F849768" Ref="U13"  Part="1" 
-F 0 "U13" H 3400 4167 50  0000 C CNN
-F 1 "MAX40203AUK" H 3400 4076 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 3400 4300 50  0001 C CNN
-F 3 "https://datasheets.maximintegrated.com/en/ds/MAX40203.pdf" H 3400 4300 50  0001 C CNN
-F 4 "Maxim Integrated" H -250 -2300 50  0001 C CNN "MFR"
-F 5 "MAX40203AUK+T" H -250 -2300 50  0001 C CNN "MPN"
-F 6 "700-MAX40203AUK+T" H -250 -2300 50  0001 C CNN "Mouser PN"
-F 7 "700-MAX40200AUK+T" H -250 -2300 50  0001 C CNN "SPN"
-F 8 "Mouser" H -250 -2300 50  0001 C CNN "SPR"
-F 9 "https://www.mouser.com/ProductDetail/Maxim-Integrated/MAX40200AUK%2bT?qs=%2Fha2pyFadujABnCd8FHptN3rEsbd5utT%2FzHUaZs42SQ3v1htVXk3Hw%3D%3D" H -250 -2300 50  0001 C CNN "SPURL"
-	1    3400 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F84977E
-P 2450 4000
-AR Path="/5F84977E" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F84977E" Ref="C31"  Part="1" 
-F 0 "C31" H 2500 4050 50  0000 L CNN
-F 1 "2.2uF" H 2450 3950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2488 3850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2450 4000 50  0001 C CNN
-F 4 "KEMET" H -4200 -2700 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -4200 -2700 50  0001 C CNN "MPN"
-F 6 "Mouser" H -4200 -2700 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -4200 -2700 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -4200 -2700 50  0001 C CNN "SPURL"
-	1    2450 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 3800 3950 3700
-Wire Wire Line
-	3950 4100 3950 4250
-$Comp
-L power:GND #PWR?
-U 1 1 5F849793
-P 3950 4250
-AR Path="/5F849793" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F849793" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F849793" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F849793" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 3950 4000 50  0001 C CNN
-F 1 "GND" H 3955 4077 50  0000 C CNN
-F 2 "" H 3950 4250 50  0001 C CNN
-F 3 "" H 3950 4250 50  0001 C CNN
-	1    3950 4250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3400 4100 3950 4100
-Wire Wire Line
-	3800 3700 3950 3700
-Connection ~ 3950 3700
-Connection ~ 3950 4100
-$Comp
-L Device:C_Small C?
-U 1 1 5F84979D
-P 2050 4000
-AR Path="/5F84979D" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F84979D" Ref="C29"  Part="1" 
-F 0 "C29" H 2142 4046 50  0000 L CNN
-F 1 "100uF" H 2142 3955 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2050 4000 50  0001 C CNN
-F 3 "~" H 2050 4000 50  0001 C CNN
-	1    2050 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C_Small C?
-U 1 1 5F8497A8
-P 2700 4000
-AR Path="/5F8497A8" Ref="C?"  Part="1" 
-AR Path="/5F7E53CF/5F8497A8" Ref="C33"  Part="1" 
-F 0 "C33" H 2800 4050 50  0000 L CNN
-F 1 "100nF" H 2750 3950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 2738 3850 50  0001 C CNN
-F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1002_X7R_SMD-1102033.pdf" H 2700 4000 50  0001 C CNN
-F 4 "KEMET" H -3950 -2700 50  0001 C CNN "MFR"
-F 5 "C0805C105K4RACTU" H -3950 -2700 50  0001 C CNN "MPN"
-F 6 "Mouser" H -3950 -2700 50  0001 C CNN "SPR"
-F 7 "80-C0805C105K4R" H -3950 -2700 50  0001 C CNN "SPN"
-F 8 "https://www.mouser.com/ProductDetail/KEMET/C0805C105K8RAC7210?qs=sGAEpiMZZMs0AnBnWHyRQOf5HOpVaXbh6p7WVhSDTqQ%3D" H -3950 -2700 50  0001 C CNN "SPURL"
-	1    2700 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5F8497AE
-P 2450 4150
-AR Path="/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5D6224DC/5F8497AE" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F8497AE" Ref="#PWR086"  Part="1" 
-F 0 "#PWR086" H 2450 3900 50  0001 C CNN
-F 1 "GND" H 2454 4008 50  0000 C CNN
-F 2 "" H 2450 4150 50  0001 C CNN
-F 3 "" H 2450 4150 50  0001 C CNN
-	1    2450 4150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 4150 2450 4100
-Wire Wire Line
-	2700 3900 2450 3900
-Connection ~ 2450 3900
-Wire Wire Line
-	2700 4100 2450 4100
-Connection ~ 2450 4100
-Wire Wire Line
-	2050 4100 2450 4100
-Wire Wire Line
-	2050 3900 2450 3900
-Wire Wire Line
-	2450 3700 2450 3900
-Wire Wire Line
-	2450 3700 3000 3700
-$Comp
-L power:PWR_FLAG #FLG?
-U 1 1 5F8497C4
-P 2150 3700
-AR Path="/5F8497C4" Ref="#FLG?"  Part="1" 
-AR Path="/5F7E53CF/5F8497C4" Ref="#FLG03"  Part="1" 
-F 0 "#FLG03" H 2150 3775 50  0001 C CNN
-F 1 "PWR_FLAG" H 2150 3873 50  0000 C CNN
-F 2 "" H 2150 3700 50  0001 C CNN
-F 3 "~" H 2150 3700 50  0001 C CNN
-	1    2150 3700
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR?
-U 1 1 5F8497CA
-P 4300 3700
-AR Path="/5F8497CA" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F8497CA" Ref="#PWR090"  Part="1" 
-F 0 "#PWR090" H 4300 3550 50  0001 C CNN
-F 1 "VCC" H 4317 3873 50  0000 C CNN
-F 2 "" H 4300 3700 50  0001 C CNN
-F 3 "" H 4300 3700 50  0001 C CNN
-	1    4300 3700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3950 3700 4300 3700
-Text Label 4150 3700 2    50   ~ 0
-5V
 $Comp
 L Connector:Jack-DC J9
 U 1 1 5F84B9FD
-P 1450 3800
-F 0 "J9" H 1507 4125 50  0000 C CNN
-F 1 "Jack-DC" H 1507 4034 50  0000 C CNN
-F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 1500 3760 50  0001 C CNN
-F 3 "~" H 1500 3760 50  0001 C CNN
-	1    1450 3800
+P 2050 3750
+F 0 "J9" H 2107 4075 50  0000 C CNN
+F 1 "Jack-DC" H 2107 3984 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_CUI_PJ-063AH_Horizontal" H 2100 3710 50  0001 C CNN
+F 3 "~" H 2100 3710 50  0001 C CNN
+	1    2050 3750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1750 3700 2150 3700
-Connection ~ 2450 3700
-Wire Wire Line
-	1750 3900 1750 4150
 $Comp
-L power:GND #PWR?
-U 1 1 5F84E838
-P 1750 4150
-AR Path="/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5CB63856/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5CB5AB00/5CB63856/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5CFABACD/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5CF9C1ED/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5D6224DC/5F84E838" Ref="#PWR?"  Part="1" 
-AR Path="/5F7E53CF/5F84E838" Ref="#PWR084"  Part="1" 
-F 0 "#PWR084" H 1750 3900 50  0001 C CNN
-F 1 "GND" H 1754 4008 50  0000 C CNN
-F 2 "" H 1750 4150 50  0001 C CNN
-F 3 "" H 1750 4150 50  0001 C CNN
-	1    1750 4150
+L max_breakout-rescue:USB_B_Micro-Connector J?
+U 1 1 5CF77AF9
+P 4350 2850
+AR Path="/5D0F9837/5CF77AF9" Ref="J?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5CF77AF9" Ref="J?"  Part="1" 
+AR Path="/5CF77AF9" Ref="J4"  Part="1" 
+AR Path="/5F7E53CF/5CF77AF9" Ref="J4"  Part="1" 
+F 0 "J4" H 4120 2839 50  0000 R CNN
+F 1 "USB_B_Micro" H 4528 3262 50  0000 R CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 4500 2800 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/18/10103594-1361315.pdf" H 4500 2800 50  0001 C CNN
+F 4 "USB Connectors 5P Quick Connect Micro USB TypeB Rcpt" H 4120 2939 50  0001 C CNN "Description"
+F 5 "Amphenol" H 4120 2939 50  0001 C CNN "MFR"
+F 6 "10103594-0001LF" H 4120 2939 50  0001 C CNN "MPN"
+F 7 "649-10103594-0001LF" H 4120 2939 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4120 2939 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/649-10103594-0001LF" H 4120 2939 50  0001 C CNN "SPURL"
+	1    4350 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 2150 3700
+NoConn ~ 4650 2850
+NoConn ~ 4650 2950
 Wire Wire Line
-	2150 3700 2450 3700
+	4650 3050 4650 3250
+Wire Wire Line
+	4350 3250 4650 3250
+Wire Wire Line
+	4950 3750 4950 3650
+Wire Wire Line
+	4950 4050 4950 3950
+$Comp
+L Device:C_Small C7
+U 1 1 5DACB455
+P 4950 3850
+F 0 "C7" H 5050 3900 50  0000 L CNN
+F 1 "1uF" H 5050 3800 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 4950 3850 50  0001 C CNN
+F 4 "C0603C105K3PACTU" H 4950 3850 50  0001 C CNN "MPN"
+F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 25V X5R 10%" H 4950 3850 50  0001 C CNN "Description"
+F 6 "KEMET" H 4950 3850 50  0001 C CNN "MFR"
+F 7 "80-80-C0603C105K3P" H 4950 3850 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4950 3850 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/GMK107BJ105KA-T?qs=%2Fha2pyFadujxSbPtMRlL02JvB%2FIbesFpDeti2kmN%252BXBUGheqsoAvmg%3D%3D" H 4950 3850 50  0001 C CNN "SPURL"
+	1    4950 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 3750 3450 3650
+Wire Wire Line
+	3450 3950 3450 4050
+Connection ~ 3450 3650
+Connection ~ 4600 4050
+Wire Wire Line
+	4600 4050 4600 3950
+Wire Wire Line
+	3450 3650 3700 3650
+Wire Wire Line
+	3700 3650 3800 3650
+Connection ~ 3700 3650
+Wire Wire Line
+	3700 3750 3700 3650
+Wire Wire Line
+	3800 3750 3700 3750
+$Comp
+L Device:C_Small C5
+U 1 1 5DACB42E
+P 4600 3850
+F 0 "C5" H 4692 3896 50  0000 L CNN
+F 1 "10nF" H 4692 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4600 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 4600 3850 50  0001 C CNN
+F 4 "C0603C103J5RACTU" H 4600 3850 50  0001 C CNN "MPN"
+F 5 "KEMET" H 4600 3850 50  0001 C CNN "MFR"
+F 6 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 0.01uF 0603 X7R 5%" H 4600 3850 50  0001 C CNN "Description"
+F 7 "80-C0603C103J5R" H 4600 3850 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4600 3850 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/EMK063BJ103KP-F?qs=%2Fha2pyFadugehjaRbRj8xKtV%2FpQjGdfWWb%2FotYo54Go%2F7EvHlIBbtg%3D%3D" H 4600 3850 50  0001 C CNN "SPURL"
+	1    4600 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR013
+U 1 1 5DACB428
+P 4950 4100
+F 0 "#PWR013" H 4950 3850 50  0001 C CNN
+F 1 "GND" H 4955 3927 50  0000 C CNN
+F 2 "" H 4950 4100 50  0001 C CNN
+F 3 "" H 4950 4100 50  0001 C CNN
+	1    4950 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5DACB422
+P 3450 3850
+F 0 "C3" H 3542 3896 50  0000 L CNN
+F 1 "1uF" H 3542 3805 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3450 3850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 3450 3850 50  0001 C CNN
+F 4 "C0603C105K3PACTU" H 3450 3850 50  0001 C CNN "MPN"
+F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 25V X5R 10%" H 3450 3850 50  0001 C CNN "Description"
+F 6 "KEMET" H 3450 3850 50  0001 C CNN "MFR"
+F 7 "80-80-C0603C105K3P" H 3450 3850 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3450 3850 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/GMK107BJ105KA-T?qs=%2Fha2pyFadujxSbPtMRlL02JvB%2FIbesFpDeti2kmN%252BXBUGheqsoAvmg%3D%3D" H 3450 3850 50  0001 C CNN "SPURL"
+	1    3450 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 4050 4600 4050
+Wire Wire Line
+	3450 4050 4200 4050
+Connection ~ 4200 4050
+$Comp
+L Regulator_Linear:LP2985-5.0 U2
+U 1 1 5FB38055
+P 4200 3750
+F 0 "U2" H 4200 4092 50  0000 C CNN
+F 1 "LP2985-5.0" H 4200 4001 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4200 4075 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 4200 3750 50  0001 C CNN
+F 4 "LDO Voltage Regulators 150-mA Low-Noise 1.5% tolerance" H 4200 3750 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 4200 3750 50  0001 C CNN "MFR"
+F 6 "LP2985-50DBVR" H 4200 3750 50  0001 C CNN "MPN"
+F 7 "595-LP2985-50DBVR" H 4200 3750 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4200 3750 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP2985-33DBVR?qs=sGAEpiMZZMsGz1a6aV8DcCOj5hh%2FNjhX4p6toGEueJ8%3D" H 4200 3750 50  0001 C CNN "SPURL"
+	1    4200 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3650 4950 3650
+Wire Wire Line
+	4600 4050 4950 4050
+NoConn ~ 4250 3250
+$Comp
+L max_breakout-rescue:TPS2113A-Power_Management U4
+U 1 1 5ECEB649
+P 6350 3750
+F 0 "U4" H 6350 4217 50  0000 C CNN
+F 1 "TPS2113A" H 6350 4126 50  0000 C CNN
+F 2 "Package_SO:TSSOP-8_4.4x3mm_P0.65mm" H 6350 4250 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps2113a.pdf" H 6300 4050 50  0001 C CNN
+F 4 "Power Switch ICs - Power Distribution Autoswitching Power Mux" H 6350 3750 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 6350 3750 50  0001 C CNN "MFR"
+F 6 "TPS2113APWR" H 6350 3750 50  0001 C CNN "MPN"
+F 7 "595-TPS2113APWR" H 6350 3750 50  0001 C CNN "SPN"
+F 8 "Mouser" H 6350 3750 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS2113APWR?qs=sGAEpiMZZMuCmTIBzycWfArOWgm%252BsETdxNLLBukyKYc%3D" H 6350 3750 50  0001 C CNN "SPURL"
+	1    6350 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C6
+U 1 1 5FB3805D
+P 4950 2850
+F 0 "C6" H 4750 2850 50  0000 L CNN
+F 1 "1uF" H 4800 2750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4950 2850 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 4950 2850 50  0001 C CNN
+F 4 "C0603C105K3PACTU" H 4950 2850 50  0001 C CNN "MPN"
+F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 25V X5R 10%" H 4950 2850 50  0001 C CNN "Description"
+F 6 "KEMET" H 4950 2850 50  0001 C CNN "MFR"
+F 7 "80-80-C0603C105K3P" H 4950 2850 50  0001 C CNN "SPN"
+F 8 "Mouser" H 4950 2850 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/GMK107BJ105KA-T?qs=%2Fha2pyFadujxSbPtMRlL02JvB%2FIbesFpDeti2kmN%252BXBUGheqsoAvmg%3D%3D" H 4950 2850 50  0001 C CNN "SPURL"
+	1    4950 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 5FB3805F
+P 5450 4100
+AR Path="/5D0F9837/5FB3805F" Ref="R?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5FB3805F" Ref="R?"  Part="1" 
+AR Path="/5D1AF052/5FB3805F" Ref="R?"  Part="1" 
+AR Path="/5FB3805F" Ref="R4"  Part="1" 
+AR Path="/5F7E53CF/5FB3805F" Ref="R4"  Part="1" 
+F 0 "R4" H 5500 4125 50  0000 L CNN
+F 1 "100K" V 5450 4050 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5450 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/hpreztr-777398.pdf" H 5450 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 100K OHM 1%" H 5450 4300 50  0001 C CNN "Description"
+F 5 "Bourns" H 5450 4300 50  0001 C CNN "MFR"
+F 6 "CR0603-FX-1003ELF" H 5450 4300 50  0001 C CNN "MPN"
+F 7 "652-CR0603-FX-103ELF" H 5450 4300 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5450 4300 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-1003ELF?qs=%2Fha2pyFadugVmr2gairtNx7wGY2lQbASq5J%2F%2FkOxnsVu4ufXiSk4Tg%3D%3D" H 5450 4300 50  0001 C CNN "SPURL"
+	1    5450 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 3900 5650 3900
+Wire Wire Line
+	5450 4000 5450 3800
+$Comp
+L Device:R_Small R?
+U 1 1 5FB38060
+P 5650 4100
+AR Path="/5D0F9837/5FB38060" Ref="R?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5FB38060" Ref="R?"  Part="1" 
+AR Path="/5D1AF052/5FB38060" Ref="R?"  Part="1" 
+AR Path="/5FB38060" Ref="R5"  Part="1" 
+AR Path="/5F7E53CF/5FB38060" Ref="R5"  Part="1" 
+F 0 "R5" H 5700 4125 50  0000 L CNN
+F 1 "20K" V 5650 4050 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 5650 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/hpreztr-777398.pdf" H 5650 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 20K OHM 1%" H 5650 4300 50  0001 C CNN "Description"
+F 5 "Bourns" H 5650 4300 50  0001 C CNN "MFR"
+F 6 "CR0603-FX-2002ELF" H 5650 4300 50  0001 C CNN "MPN"
+F 7 "652-CR0603FX-2002ELF" H 5650 4300 50  0001 C CNN "SPN"
+F 8 "Mouser" H 5650 4300 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-2002ELF?qs=%2Fha2pyFadugVmr2gairtN2xKVF9iJIu%2FoYzCZE9AYs8%252B6SPmBZuK4g%3D%3D" H 5650 4300 50  0001 C CNN "SPURL"
+	1    5650 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4000 5650 3900
+Wire Wire Line
+	6850 3900 6950 3900
+$Comp
+L Device:R_Small R?
+U 1 1 5FB38061
+P 6950 4100
+AR Path="/5D0F9837/5FB38061" Ref="R?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5FB38061" Ref="R?"  Part="1" 
+AR Path="/5D1AF052/5FB38061" Ref="R?"  Part="1" 
+AR Path="/5FB38061" Ref="R6"  Part="1" 
+AR Path="/5F7E53CF/5FB38061" Ref="R6"  Part="1" 
+F 0 "R6" H 7000 4125 50  0000 L CNN
+F 1 "1K" V 6950 4050 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 6950 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/hpreztr-777398.pdf" H 6950 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K 1% 1/10W" H 6950 4300 50  0001 C CNN "Description"
+F 5 "Bourns" H 6950 4300 50  0001 C CNN "MFR"
+F 6 "CR0603-FX-1001ELF" H 6950 4300 50  0001 C CNN "MPN"
+F 7 "652-CR0603FX-1001ELF" H 6950 4300 50  0001 C CNN "SPN"
+F 8 "Mouser" H 6950 4300 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-1001ELF?qs=%2Fha2pyFadugVmr2gairtN1XPwG%252BCfVAy2K2HA0c9Di64dkICeeJsCA%3D%3D" H 6950 4300 50  0001 C CNN "SPURL"
+	1    6950 4100
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4000 6950 3900
+$Comp
+L Device:R_Small R?
+U 1 1 5FB38063
+P 7050 3700
+AR Path="/5D0F9837/5FB38063" Ref="R?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5FB38063" Ref="R?"  Part="1" 
+AR Path="/5D1AF052/5FB38063" Ref="R?"  Part="1" 
+AR Path="/5FB38063" Ref="R7"  Part="1" 
+AR Path="/5F7E53CF/5FB38063" Ref="R7"  Part="1" 
+F 0 "R7" V 6950 3650 50  0000 L CNN
+F 1 "100K" V 7050 3650 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7050 3700 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/hpreztr-777398.pdf" H 7050 3700 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 100K OHM 1%" H 7050 3900 50  0001 C CNN "Description"
+F 5 "Bourns" H 7050 3900 50  0001 C CNN "MFR"
+F 6 "CR0603-FX-1003ELF" H 7050 3900 50  0001 C CNN "MPN"
+F 7 "652-CR0603-FX-103ELF" H 7050 3900 50  0001 C CNN "SPN"
+F 8 "Mouser" H 7050 3900 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-1003ELF?qs=%2Fha2pyFadugVmr2gairtNx7wGY2lQbASq5J%2F%2FkOxnsVu4ufXiSk4Tg%3D%3D" H 7050 3900 50  0001 C CNN "SPURL"
+	1    7050 3700
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6850 3700 6950 3700
+Wire Wire Line
+	7150 3700 7200 3700
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 5FB3805E
+P 3450 3550
+F 0 "#FLG01" H 3450 3625 50  0001 C CNN
+F 1 "PWR_FLAG" H 3700 3650 50  0000 C CNN
+F 2 "" H 3450 3550 50  0001 C CNN
+F 3 "~" H 3450 3550 50  0001 C CNN
+	1    3450 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4350 5650 4350
+Connection ~ 5650 4350
+Connection ~ 6350 4350
+Wire Wire Line
+	6350 4350 6950 4350
+Connection ~ 6950 4350
+Wire Wire Line
+	6950 4350 7200 4350
+Wire Wire Line
+	5450 3800 5850 3800
+Wire Wire Line
+	5450 4200 5450 4350
+Wire Wire Line
+	5650 4200 5650 4350
+Wire Wire Line
+	6950 4200 6950 4350
+Wire Wire Line
+	7200 4000 7200 3700
+$Comp
+L Device:C_Small C8
+U 1 1 5EEEA176
+P 7200 4100
+F 0 "C8" H 7292 4146 50  0000 L CNN
+F 1 "4.7uF" H 7292 4055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7200 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 7200 4100 50  0001 C CNN
+F 4 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 10V 4.7uF 0603 X5R 10%" H 7200 4100 50  0001 C CNN "Description"
+F 5 "KEMET" H 7200 4100 50  0001 C CNN "MFR"
+F 6 "C0603C475K8PACTU" H 7200 4100 50  0001 C CNN "MPN"
+F 7 "80-C0603C475K8P" H 7200 4100 50  0001 C CNN "SPN"
+F 8 "Mouser" H 7200 4100 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/EMK107ABJ475KA-T?qs=%2Fha2pyFaduihn8hrI7exLKYxpfxdXhNHtjIaPuMWzg7CxPHXl9KmnY9hjqpHRSFN" H 7200 4100 50  0001 C CNN "SPURL"
+	1    7200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4200 7200 4350
+Wire Wire Line
+	6850 3550 7200 3550
+$Comp
+L Device:D_Schottky_Small D1
+U 1 1 5EF818EA
+P 2650 3650
+F 0 "D1" H 2650 3445 50  0000 C CNN
+F 1 "BAT54W" H 2650 3550 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-123" V 2650 3650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/427/bat54w-g-1767864.pdf" V 2650 3650 50  0001 C CNN
+F 4 "Schottky Diodes & Rectifiers 30V Zener SKY DIODE SOD-123" H 2650 3650 50  0001 C CNN "Description"
+F 5 "Vishay" H 2650 3650 50  0001 C CNN "MFR"
+F 6 "BAT54W-HG3-08" H 2650 3650 50  0001 C CNN "MPN"
+F 7 "78-BAT54W-HG3-08" H 2650 3650 50  0001 C CNN "SPN"
+F 8 "Mouser" H 2650 3650 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Vishay-Semiconductors/BAT54W-HG3-08?qs=sGAEpiMZZMtQ8nqTKtFS%2FGTY%2FGKvBUTW0UmcBTw1FJgXtxZlPmy%2F7w%3D%3D" H 2650 3650 50  0001 C CNN "SPURL"
+	1    2650 3650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3200 3650 3450 3650
+Wire Wire Line
+	2350 3650 2550 3650
+Wire Wire Line
+	7200 3700 7200 3550
+Connection ~ 7200 3700
+Connection ~ 7200 3550
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5EC05741
+P 3100 3650
+F 0 "FB1" V 2950 3650 50  0000 C CNN
+F 1 "100R @ 100Mhz" V 3200 3650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3030 3650 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/TaiyoYuden_chipbeads01_e-1274227.pdf" H 3100 3650 50  0001 C CNN
+F 4 "Ferrite Beads HI CUR CHIP BD 0603 AEC-Q200 100OHMS 25%" H 3100 3650 50  0001 C CNN "Description"
+F 5 "Taiyo Yuden" H 3100 3650 50  0001 C CNN "MFR"
+F 6 "FBMH1608HM101-TV" H 3100 3650 50  0001 C CNN "MPN"
+F 7 "963-FBMH1608HM101-TV" H 3100 3650 50  0001 C CNN "SPN"
+F 8 "Mouser" H 3100 3650 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/FBMH1608HM101-TV?qs=QK%2FAlAnD7r580MqyMGCOVQ%3D%3D" H 3100 3650 50  0001 C CNN "SPURL"
+	1    3100 3650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2750 3650 3000 3650
+Wire Wire Line
+	5650 4350 6350 4350
+Connection ~ 7200 4350
+Connection ~ 4950 3650
+Connection ~ 4950 4050
+Wire Wire Line
+	4950 4100 4950 4050
+Wire Wire Line
+	4950 3650 5850 3650
+Wire Wire Line
+	4650 2650 4950 2650
+Wire Wire Line
+	4950 2750 4950 2650
+Wire Wire Line
+	4950 2950 4950 3250
+Wire Wire Line
+	4950 3250 4650 3250
+Connection ~ 4650 3250
+$Comp
+L power:GND #PWR012
+U 1 1 5FA8E3AB
+P 4950 3300
+F 0 "#PWR012" H 4950 3050 50  0001 C CNN
+F 1 "GND" H 4955 3127 50  0000 C CNN
+F 2 "" H 4950 3300 50  0001 C CNN
+F 3 "" H 4950 3300 50  0001 C CNN
+	1    4950 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 3300 4950 3250
+Connection ~ 4950 3250
+Wire Wire Line
+	4950 2650 5850 2650
+Wire Wire Line
+	5850 2650 5850 3550
+Connection ~ 4950 2650
+Connection ~ 9400 3550
+Wire Wire Line
+	9400 3450 9400 3550
+Wire Wire Line
+	9400 3850 9400 3950
+Wire Wire Line
+	9400 3650 9400 3550
+Text Label 9150 3950 0    50   ~ 0
+GND
+Text Label 9150 3550 0    50   ~ 0
+3V3
+Wire Wire Line
+	9000 3550 9400 3550
+Wire Wire Line
+	9000 3950 9400 3950
+$Comp
+L Regulator_Linear:LP2985-3.3 U5
+U 1 1 5FB38054
+P 8600 3650
+F 0 "U5" H 8600 3992 50  0000 C CNN
+F 1 "LP2985-3.3" H 8600 3901 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 8600 3975 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lp2985.pdf" H 8600 3650 50  0001 C CNN
+F 4 "LDO Voltage Regulators 150-mA Low-Noise 1.5% tolerance" H 8600 3650 50  0001 C CNN "Description"
+F 5 "Texas Instruments" H 8600 3650 50  0001 C CNN "MFR"
+F 6 "LP2985-33DBVR" H 8600 3650 50  0001 C CNN "MPN"
+F 7 "595-LP2985-33DBVR" H 8600 3650 50  0001 C CNN "SPN"
+F 8 "Mouser" H 8600 3650 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Texas-Instruments/LP2985-33DBVR?qs=sGAEpiMZZMsGz1a6aV8DcCOj5hh%2FNjhX4p6toGEueJ8%3D" H 8600 3650 50  0001 C CNN "SPURL"
+	1    8600 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C9
+U 1 1 5DDD40A7
+P 7850 3750
+F 0 "C9" H 7942 3796 50  0000 L CNN
+F 1 "1uF" H 7942 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7850 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 7850 3750 50  0001 C CNN
+F 4 "C0603C105K3PACTU" H 7850 3750 50  0001 C CNN "MPN"
+F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 25V X5R 10%" H 7850 3750 50  0001 C CNN "Description"
+F 6 "KEMET" H 7850 3750 50  0001 C CNN "MFR"
+F 7 "80-80-C0603C105K3P" H 7850 3750 50  0001 C CNN "SPN"
+F 8 "Mouser" H 7850 3750 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/GMK107BJ105KA-T?qs=%2Fha2pyFadujxSbPtMRlL02JvB%2FIbesFpDeti2kmN%252BXBUGheqsoAvmg%3D%3D" H 7850 3750 50  0001 C CNN "SPURL"
+	1    7850 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 5DDD40B3
+P 9400 4000
+F 0 "#PWR024" H 9400 3750 50  0001 C CNN
+F 1 "GND" H 9405 3827 50  0000 C CNN
+F 2 "" H 9400 4000 50  0001 C CNN
+F 3 "" H 9400 4000 50  0001 C CNN
+	1    9400 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C13
+U 1 1 5DDD40C0
+P 9000 3750
+F 0 "C13" H 9092 3796 50  0000 L CNN
+F 1 "10nF" H 9092 3705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9000 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/396/mlcc02_e-1307760.pdf" H 9000 3750 50  0001 C CNN
+F 4 "C0603C103J5RACTU" H 9000 3750 50  0001 C CNN "MPN"
+F 5 "KEMET" H 9000 3750 50  0001 C CNN "MFR"
+F 6 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 50V 0.01uF 0603 X7R 5%" H 9000 3750 50  0001 C CNN "Description"
+F 7 "80-C0603C103J5R" H 9000 3750 50  0001 C CNN "SPN"
+F 8 "Mouser" H 9000 3750 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/EMK063BJ103KP-F?qs=%2Fha2pyFadugehjaRbRj8xKtV%2FpQjGdfWWb%2FotYo54Go%2F7EvHlIBbtg%3D%3D" H 9000 3750 50  0001 C CNN "SPURL"
+	1    9000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 3650 8100 3650
+Wire Wire Line
+	8100 3650 8100 3550
+Wire Wire Line
+	8100 3550 8200 3550
+Connection ~ 8100 3550
+Wire Wire Line
+	9000 3950 9000 3850
+Wire Wire Line
+	7850 3850 7850 3950
+Wire Wire Line
+	7850 3650 7850 3550
+Connection ~ 7850 3550
+Wire Wire Line
+	7850 3550 8100 3550
+$Comp
+L power:+3V3 #PWR023
+U 1 1 5FB3805A
+P 9400 3450
+F 0 "#PWR023" H 9400 3300 50  0001 C CNN
+F 1 "+3V3" H 9415 3623 50  0000 C CNN
+F 2 "" H 9400 3450 50  0001 C CNN
+F 3 "" H 9400 3450 50  0001 C CNN
+	1    9400 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 3950 8600 3950
+Connection ~ 8600 3950
+Wire Wire Line
+	8600 3950 9000 3950
+Connection ~ 9000 3950
+$Comp
+L Device:C_Small C15
+U 1 1 5DA119F5
+P 9400 3750
+F 0 "C15" H 9500 3800 50  0000 L CNN
+F 1 "1uF" H 9500 3700 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 9400 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/212/KEM_C1006_X5R_SMD-1103249.pdf" H 9400 3750 50  0001 C CNN
+F 4 "C0603C105K3PACTU" H 9400 3750 50  0001 C CNN "MPN"
+F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 1uF 25V X5R 10%" H 9400 3750 50  0001 C CNN "Description"
+F 6 "KEMET" H 9400 3750 50  0001 C CNN "MFR"
+F 7 "80-80-C0603C105K3P" H 9400 3750 50  0001 C CNN "SPN"
+F 8 "Mouser" H 9400 3750 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Taiyo-Yuden/GMK107BJ105KA-T?qs=%2Fha2pyFadujxSbPtMRlL02JvB%2FIbesFpDeti2kmN%252BXBUGheqsoAvmg%3D%3D" H 9400 3750 50  0001 C CNN "SPURL"
+	1    9400 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 4350 7600 4350
+Wire Wire Line
+	7600 3550 7600 3600
+Wire Wire Line
+	7200 3550 7600 3550
+Text Label 7300 4350 0    50   ~ 0
+GND
+Text Label 7350 3550 0    50   ~ 0
+5V
+Wire Wire Line
+	7600 4350 7600 4400
+$Comp
+L power:GND #PWR017
+U 1 1 5FB38053
+P 7600 4400
+F 0 "#PWR017" H 7600 4150 50  0001 C CNN
+F 1 "GND" H 7605 4227 50  0000 C CNN
+F 2 "" H 7600 4400 50  0001 C CNN
+F 3 "" H 7600 4400 50  0001 C CNN
+	1    7600 4400
+	1    0    0    -1  
+$EndComp
+Connection ~ 7600 3550
+$Comp
+L power:+5V #PWR016
+U 1 1 5F38DC6B
+P 7600 3450
+F 0 "#PWR016" H 7600 3300 50  0001 C CNN
+F 1 "+5V" H 7615 3623 50  0000 C CNN
+F 2 "" H 7600 3450 50  0001 C CNN
+F 3 "" H 7600 3450 50  0001 C CNN
+	1    7600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 3450 7600 3550
+Connection ~ 7600 4350
+Wire Wire Line
+	7600 4200 7600 4350
+Wire Wire Line
+	7600 3900 7600 4000
+$Comp
+L Device:R_Small R?
+U 1 1 5FB3804D
+P 7600 4100
+AR Path="/5D0F9837/5FB3804D" Ref="R?"  Part="1" 
+AR Path="/5CFABACD/5D0BF766/5FB3804D" Ref="R?"  Part="1" 
+AR Path="/5D1AF052/5FB3804D" Ref="R?"  Part="1" 
+AR Path="/5FB3804D" Ref="R8"  Part="1" 
+AR Path="/5F7E53CF/5FB3804D" Ref="R8"  Part="1" 
+F 0 "R8" H 7650 4100 50  0000 L CNN
+F 1 "1K" V 7600 4050 32  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7600 4100 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/54/hpreztr-777398.pdf" H 7600 4100 50  0001 C CNN
+F 4 "Thick Film Resistors - SMD 1K 1% 1/10W" H 7670 4125 50  0001 C CNN "Description"
+F 5 "Bourns" H 7670 4125 50  0001 C CNN "MFR"
+F 6 "CR0603-FX-1001ELF" H 7670 4125 50  0001 C CNN "MPN"
+F 7 "652-CR0603FX-1001ELF" H 7670 4125 50  0001 C CNN "SPN"
+F 8 "Mouser" H 7670 4125 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/Bourns/CR0603-FX-1001ELF?qs=%2Fha2pyFadugVmr2gairtN1XPwG%252BCfVAy2K2HA0c9Di64dkICeeJsCA%3D%3D" H 7670 4125 50  0001 C CNN "SPURL"
+	1    7600 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 5FB3804C
+P 7600 3750
+F 0 "D2" V 7595 3875 50  0000 C CNN
+F 1 "BLU" V 7600 3650 32  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 7600 3750 50  0001 C CNN
+F 3 "https://www.mouser.com/datasheet/2/348/smld12-e-1874545.pdf" H 7600 3750 50  0001 C CNN
+F 4 "Standard LEDs - SMD Blue 470nm; 40mcd 0603; 66mW" H 7595 3975 50  0001 C CNN "Description"
+F 5 "ROHM Semiconductor" H 7595 3975 50  0001 C CNN "MFR"
+F 6 "SMLD12BN1WT86" H 7595 3975 50  0001 C CNN "MPN"
+F 7 "755-SMLD12BN1WT86" H 7595 3975 50  0001 C CNN "SPN"
+F 8 "Mouser" H 7595 3975 50  0001 C CNN "SPR"
+F 9 "https://www.mouser.com/ProductDetail/ROHM-Semiconductor/SMLD12BN1WT86?qs=%2Fha2pyFaduhlMaUW9Hl5BJziD9ojYxPaxoeiKlShTafZ%252BjcYk7Tme%2F3kP%2FvhpgiB" H 7595 3975 50  0001 C CNN "SPURL"
+	1    7600 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 3550 7850 3550
+Wire Wire Line
+	9400 4000 9400 3950
+Connection ~ 9400 3950
+Wire Wire Line
+	3450 3550 3450 3650
+Wire Wire Line
+	2350 3850 2350 4050
+Wire Wire Line
+	2350 4050 3450 4050
+Connection ~ 3450 4050
 $EndSCHEMATC
